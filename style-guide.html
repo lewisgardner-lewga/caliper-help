@@ -1,0 +1,640 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Caliper style guide</title>
+<meta name="description" content="Fonts, color schemes, buttons and spacing for each Caliper preset, rendered with the theme's own styles.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Inter:wght@400;600&family=Geist+Mono&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="top__inner">
+    <a class="brand" href="index.html"><span>Caliper</span> Help</a>
+    <a class="pill" href="index.html">Documentation</a>
+  </div>
+</header>
+
+<div class="layout">
+  <nav class="toc" aria-label="Contents">
+    <span class="label">Style guide</span>
+    <a href="#caliper">Caliper</a><a href="#hi-vis">Hi-vis</a><a href="#field">Field</a>
+    <a href="#spacing">Spacing</a>
+  </nav>
+
+  <main class="content">
+    <div class="hero">
+      <p class="label">Caliper theme reference</p>
+      <h1>Style guide</h1>
+      <p class="lede">The fonts, color schemes, buttons and spacing behind each preset. Every value here comes from the preset's theme settings, so you can match or change it in the theme editor.</p>
+    </div>
+
+    <section class="doc" id="caliper">
+      <p class="label">Preset</p>
+      <h2>Caliper</h2>
+      <p>Light gray, black pill buttons, condensed headings, rounded photos.</p>
+      <h3>Fonts</h3>
+      <div class="table-wrap"><table><thead><tr><th>Role</th><th>Font</th><th>Used for</th></tr></thead><tbody><tr><td>Headings</td><td>Barlow Condensed, 700</td><td>Page titles, section headings, large prices</td></tr><tr><td>Body</td><td>Inter, 400</td><td>Paragraphs, descriptions, policies</td></tr><tr><td>Technical text</td><td>Geist Mono, 400</td><td>Part numbers, prices, specs, stock</td></tr><tr><td>Labels and buttons</td><td>Same as headings</td><td>Eyebrows, buttons, table headers</td></tr></tbody></table></div>
+      <h3>Color schemes and components</h3>
+      <p>Rendered with the theme's own stylesheets. Each scheme lists its colors and the contrast of each text pairing; body text needs 4.5:1.</p>
+      <iframe class="sg-frame" title="Caliper preset: type, color schemes and components" loading="lazy" srcdoc="&lt;!doctype html&gt;
+&lt;html lang=&quot;en&quot;&gt;&lt;head&gt;&lt;meta charset=&quot;utf-8&quot;&gt;&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+&lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.googleapis.com&quot;&gt;&lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.gstatic.com&quot; crossorigin&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&amp;family=Inter:wght@400;700&amp;family=Geist+Mono:wght@400;700&amp;display=swap&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;theme/critical.css&quot;&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;theme/base.css&quot;&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;theme/section-product.css&quot;&gt;
+&lt;style&gt;
+:root {
+  --font-heading-family: &#x27;Barlow Condensed&#x27;, sans-serif; --font-heading-weight: 700; --font-heading-style: normal;
+  --heading-case: uppercase; --heading-scale: 1.0;
+  --font-body-family: &#x27;Inter&#x27;, sans-serif; --font-body-weight: 400; --font-body-weight-bold: 700; --font-body-style: normal;
+  --font-mono-family: &#x27;Geist Mono&#x27;, monospace; --font-mono-weight: 400; --font-mono-weight-bold: 700;
+  --font-label-family: &#x27;Barlow Condensed&#x27;, sans-serif; --font-label-weight: 700; --label-size: 0.8125rem; --label-tracking: 0.05em;
+  --page-width: 1200px; --page-margin: 22px; --page-margin-phone: min(22px, 20px);
+  --radius-button: 999px; --radius-image: 12px;
+  --panel-border-width: 0px;
+}
+:root, .color-scheme-1 { --color-background: #CACACA; --gradient-background: #CACACA; --color-text: #000000; --color-muted: #555555; --color-rule: #A3A3A3; --color-panel: #FFFFFF; --color-specimen: #F1F1F1; --color-button: #1A1B1E; --color-button-label: #FFFFFF; --color-secondary-button: #FFFFFF; --color-secondary-button-label: #000000; --color-accent: #000000; --color-accent-label: #FFFFFF; }
+.color-scheme-2 { --color-background: #CACACA; --gradient-background: #CACACA; --color-text: #000000; --color-muted: #555555; --color-rule: #404040; --color-panel: #FFFFFF; --color-specimen: #F1F1F1; --color-button: #1A1B1E; --color-button-label: #FFFFFF; --color-secondary-button: #FFFFFF; --color-secondary-button-label: #000000; --color-accent: #000000; --color-accent-label: #FFFFFF; }
+.color-scheme-3 { --color-background: #FFFFFF; --gradient-background: #FFFFFF; --color-text: #000000; --color-muted: #595959; --color-rule: #CACACA; --color-panel: #F1F1F1; --color-specimen: #F1F1F1; --color-button: #1A1B1E; --color-button-label: #FFFFFF; --color-secondary-button: #FFFFFF; --color-secondary-button-label: #000000; --color-accent: #000000; --color-accent-label: #FFFFFF; }
+.color-scheme-4 { --color-background: #1A1B1E; --gradient-background: #1A1B1E; --color-text: #FFFFFF; --color-muted: #A6A6A6; --color-rule: #404040; --color-panel: #26272A; --color-specimen: #2F3033; --color-button: #FFFFFF; --color-button-label: #000000; --color-secondary-button: #1A1B1E; --color-secondary-button-label: #FFFFFF; --color-accent: #FFFFFF; --color-accent-label: #000000; }
+html, body { min-height: 0; }
+body { display: block; background: var(--color-background); padding: 24px; }
+.sg-type { display: grid; gap: 14px; padding-bottom: 28px; }
+.sg-type__meta { display: flex; flex-wrap: wrap; gap: 8px 20px; }
+.sg-schemes { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 12px; }
+.sg-scheme { display: grid; align-content: start; gap: 14px; padding: 20px; border-radius: max(var(--radius-image), 4px);
+  background: var(--color-background); color: var(--color-text); border: 1px solid var(--color-rule); }
+.sg-scheme__head { display: grid; gap: 2px; }
+.sg-small { font-size: 0.8125rem; }
+.sg-row { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; }
+.sg-row--fields { display: grid; grid-template-columns: minmax(0, 3fr) minmax(0, 2fr); }
+.sg-panel { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; padding: 12px 14px;
+  background: var(--color-panel); border: var(--panel-border-width) solid var(--color-rule); border-radius: max(var(--radius-image), 4px); }
+.sg-swatches, .sg-checks { display: grid; gap: 6px; margin: 0; padding: 0; list-style: none; font-size: 0.8125rem; }
+.sg-swatches li, .sg-checks li { display: grid; grid-template-columns: 22px minmax(0, 1fr) auto; align-items: center; gap: 10px; }
+.sg-checks li { grid-template-columns: minmax(0, 1fr) auto 5.5rem; padding-top: 6px; border-top: 1px solid var(--color-rule); }
+.sg-swatch { width: 22px; height: 22px; border-radius: 50%; box-shadow: inset 0 0 0 1px var(--color-rule); }
+.sg-swatches code, .sg-checks code { font-family: var(--font-mono-family); }
+.sg-verdict { text-align: end; font-family: var(--font-label-family); font-size: var(--label-size); letter-spacing: var(--label-tracking); text-transform: uppercase; }
+.sg-buy { display: grid; gap: 0; max-width: 26rem; padding-top: 28px; }
+.sg-buy .product-form__row { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.sg-buy .product-form__submit { flex: 1 1 8rem; }
+.sg-buy .quantity__button { color: inherit; }
+&lt;/style&gt;&lt;/head&gt;
+&lt;body class=&quot;color-scheme-1&quot; data-menu=&quot;pills&quot; data-filters=&quot;pills&quot; data-stock=&quot;dot&quot; data-table-head=&quot;plain&quot;&gt;
+&lt;div class=&quot;sg-type&quot;&gt;
+  &lt;p class=&quot;label&quot;&gt;Fixings, hydraulics and bearings&lt;/p&gt;
+  &lt;p class=&quot;h0&quot;&gt;Every size in stock. Most ship today.&lt;/p&gt;
+  &lt;p class=&quot;h2&quot;&gt;Specified by the crews who use it&lt;/p&gt;
+  &lt;p class=&quot;h4&quot;&gt;Kerncraft 18V tools&lt;/p&gt;
+  &lt;p style=&quot;max-width:60ch&quot;&gt;Bolts, fittings and bearings listed by thread, size and rating. Order before 3pm and it leaves today.&lt;/p&gt;
+  &lt;div class=&quot;sg-type__meta&quot;&gt;&lt;span class=&quot;part-number&quot;&gt;KC-CD18&lt;/span&gt;&lt;span class=&quot;price&quot;&gt;$129.00&lt;/span&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sg-schemes&quot;&gt;
+&lt;section class=&quot;sg-scheme color-scheme-1&quot; aria-labelledby=&quot;scheme-1-title&quot;&gt;
+  &lt;header class=&quot;sg-scheme__head&quot;&gt;
+    &lt;p class=&quot;label&quot; id=&quot;scheme-1-title&quot;&gt;Scheme 1&lt;/p&gt;
+    &lt;p class=&quot;muted sg-small&quot;&gt;Pages and most sections&lt;/p&gt;
+  &lt;/header&gt;
+  &lt;p class=&quot;h3&quot;&gt;Every size in stock. Most ship today.&lt;/p&gt;
+  &lt;p&gt;Body text sits on the background in the text color. &lt;span class=&quot;muted&quot;&gt;Secondary text carries supporting detail.&lt;/span&gt;&lt;/p&gt;
+  &lt;div class=&quot;sg-row&quot;&gt;
+    &lt;span class=&quot;button&quot;&gt;Add to cart&lt;/span&gt;
+    &lt;span class=&quot;button button--secondary&quot;&gt;View details&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;sg-row&quot;&gt;
+    &lt;span class=&quot;chip&quot;&gt;In compare&lt;/span&gt;
+    &lt;span class=&quot;stock stock--in mono&quot;&gt;240 in stock&lt;/span&gt;
+    &lt;span class=&quot;stock stock--low mono&quot;&gt;Low stock: 4 left&lt;/span&gt;
+    &lt;span class=&quot;stock stock--out mono&quot;&gt;Out of stock&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;sg-row sg-row--fields&quot;&gt;
+    &lt;input class=&quot;input&quot; type=&quot;text&quot; placeholder=&quot;Search part number&quot; aria-label=&quot;Search part number (scheme-1)&quot;&gt;
+    &lt;select class=&quot;select&quot; aria-label=&quot;Sort (scheme-1)&quot;&gt;&lt;option&gt;Best selling&lt;/option&gt;&lt;/select&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;sg-panel&quot;&gt;
+    &lt;span class=&quot;part-number sg-small&quot;&gt;KC-CD18&lt;/span&gt;
+    &lt;div class=&quot;price price--sale&quot;&gt;&lt;span class=&quot;price__current&quot;&gt;$129.00&lt;/span&gt;&lt;s class=&quot;price__compare&quot;&gt;$159.00&lt;/s&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;ul class=&quot;sg-swatches&quot; role=&quot;list&quot;&gt;&lt;li&gt;&lt;span class=&quot;sg-swatch&quot; style=&quot;background:#CACACA&quot;&gt;&lt;/span&gt;&lt;span&gt;Background&lt;/span&gt;&lt;code&gt;#CACACA&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;sg-swatch&quot; style=&quot;background:#000000&quot;&gt;&lt;/span&gt;&lt;span&gt;Text&lt;/span&gt;&lt;code&gt;#000000&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;sg-swatch&quot; style=&quot;background:#555555&quot;&gt;&lt;/span&gt;&lt;span&gt;Secondary text&lt;/span&gt;&lt;code&gt;#555555&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;sg-swatch&quot; style=&quot;background:#A3A3A3&quot;&gt;&lt;/span&gt;&lt;span&gt;Lines&lt;/span&gt;&lt;code&gt;#A3A3A3&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;sg-swatch&quot; style=&quot;background:#FFFFFF&quot;&gt;&lt;/span&gt;&lt;span&gt;Panels&lt;/span&gt;&lt;code&gt;#FFFFFF&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;sg-swatch&quot; style=&quot;background:#F1F1F1&quot;&gt;&lt;/span&gt;&lt;span&gt;Product image&lt;/span&gt;&lt;code&gt;#F1F1F1&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;sg-swatch&quot; style=&quot;background:#1A1B1E&quot;&gt;&lt;/span&gt;&lt;span&gt;Primary button&lt;/span&gt;&lt;code&gt;#1A1B1E&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;sg-swatch&quot; style=&quot;background:#FFFFFF&quot;&gt;&lt;/span&gt;&lt;span&gt;Secondary button&lt;/span&gt;&lt;code&gt;#FFFFFF&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;sg-swatch&quot; style=&quot;background:#000000&quot;&gt;&lt;/span&gt;&lt;span&gt;Accent&lt;/span&gt;&lt;code&gt;#000000&lt;/code&gt;&lt;/li&gt;&lt;/ul&gt;
+  &lt;ul class=&quot;sg-checks&quot; role=&quot;list&quot; aria-label=&quot;Contrast, 4.5:1 needed for text&quot;&gt;&lt;li&gt;&lt;span&gt;Text&lt;/span&gt;&lt;code&gt;12.8:1&lt;/code&gt;&lt;span class=&quot;sg-verdict&quot;&gt;Pass&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;Secondary text&lt;/span&gt;&lt;code&gt;4.5:1&lt;/code&gt;&lt;span class=&quot;sg-verdict&quot;&gt;Pass&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;Text on panels&lt;/span&gt;&lt;code&gt;21.0:1&lt;/code&gt;&lt;span class=&quot;sg-verdict&quot;&gt;Pass&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;Primary button&lt;/span&gt;&lt;code&gt;17.2:1&lt;/code&gt;&lt;span class=&quot;sg-verdict&quot;&gt;Pass&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;Secondary button&lt;/span&gt;&lt;code&gt;21.0:1&lt;/code&gt;&lt;span class=&quot;sg-verdict&quot;&gt;Pass&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;Accent&lt;/span&gt;&lt;code&gt;21.0:1&lt;/code&gt;&lt;span class=&quot;sg-verdict&quot;&gt;Pass&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;/section&gt;
+&lt;section class=&quot;sg-scheme color-scheme-2&quot; aria-labelledby=&quot;scheme-2-title&quot;&gt;
+  &lt;header class=&quot;sg-scheme__head&quot;&gt;
+    &lt;p class=&quot;label&quot; id=&quot;scheme-2-title&quot;&gt;Scheme 2&lt;/p&gt;
+    &lt;p class=&quot;muted sg-small&quot;&gt;Header, footer and announcement bar&lt;/p&gt;
+  &lt;/header&gt;
+  &lt;p class=&quot;h3&quot;&gt;Every size in stock. Most ship today.&lt;/p&gt;
+  &lt;p&gt;Body text sits on the background in the text color. &lt;span class=&quot;muted&quot;&gt;Secondary text carries supporting detail.&lt;/span&gt;&lt;/p&gt;
+  &lt;div class=&quot;sg-row&quot;&gt;
+    &lt;span class=&quot;button&quot;&gt;Add to cart&lt;/span&gt;
+    &lt;span class=&quot;button button--secondary&quot;&gt;View details&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;sg-row&quot;&gt;
+    &lt;span class=&quot;chip&quot;&gt;In compare&lt;/span&gt;
+    &lt;span class=&quot;stock stock--in mono&quot;&gt;240 in stock&lt;/span&gt;
+    &lt;span class=&quot;stock stock--low mono&quot;&gt;Low stock: 4 left&lt;/span&gt;
+    &lt;span class=&quot;stock stock--out mono&quot;&gt;Out of stock&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;sg-row sg-row--fields&quot;&gt;
+    &lt;input class=&quot;input&quot; type=&quot;text&quot; placeholder=&quot;Search part number&quot; aria-label=&quot;Search part number (scheme-2)&quot;&gt;
+    &lt;select class=&quot;select&quot; aria-label=&quot;Sort (scheme-2)&quot;&gt;&lt;option&gt;Best selling&lt;/option&gt;&lt;/select&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;sg-panel&quot;&gt;
+    &lt;span class=&quot;part-number sg-small&quot;&gt;KC-CD18&lt;/span&gt;
+    &lt;div class=&quot;price price--sale&quot;&gt;&lt;span class=&quot;price__current&quot;&gt;$129.00&lt;/span&gt;&lt;s class=&quot;price__compare&quot;&gt;$159.00&lt;/s&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;ul class=&quot;sg-swatches&quot; role=&quot;list&quot;&gt;&lt;li&gt;&lt;span class=&quot;sg-swatch&quot; style=&quot;background:#CACACA&quot;&gt;&lt;/span&gt;&lt;span&gt;Background&lt;/span&gt;&lt;code&gt;#CACACA&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;sg-swatch&quot; style=&quot;background:#000000&quot;&gt;&lt;/span&gt;&lt;span&gt;Text&lt;/span&gt;&lt;code&gt;#000000&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;sg-swatch&quot; style=&quot;background:#555555&quot;&gt;&lt;/span&gt;&lt;span&gt;Secondary text&lt;/span&gt;&lt;code&gt;#555555&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;sg-swatch&quot; style=&quot;background:#404040&quot;&gt;&lt;/span&gt;&lt;span&gt;Lines&lt;/span&gt;&lt;code&gt;#404040&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;sg-swatch&quot; style=&quot;background:#FFFFFF&quot;&gt;&lt;/span&gt;&lt;span&gt;Panels&lt;/span&gt;&lt;code&gt;#FFFFFF&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;sg-swatch&quot; style=&quot;background:#F1F1F1&quot;&gt;&lt;/span&gt;&lt;span&gt;Product image&lt;/span&gt;&lt;code&gt;#F1F1F1&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;sg-swatch&quot; style=&quot;background:#1A1B1E&quot;&gt;&lt;/span&gt;&lt;span&gt;Primary button&lt;/span&gt;&lt;code&gt;#1A1B1E&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;sg-swatch&quot; style=&quot;background:#FFFFFF&quot;&gt;&lt;/span&gt;&lt;span&gt;Secondary button&lt;/span&gt;&lt;code&gt;#FFFFFF&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;sg-swatch&quot; style=&quot;background:#000000&quot;&gt;&lt;/span&gt;&lt;span&gt;Accent&lt;/span&gt;&lt;code&gt;#000000&lt;/code&gt;&lt;/li&gt;&lt;/ul&gt;
+  &lt;ul class=&quot;sg-checks&quot; role=&quot;list&quot; aria-label=&quot;Contrast, 4.5:1 needed for text&quot;&gt;&lt;li&gt;&lt;span&gt;Text&lt;/span&gt;&lt;code&gt;12.8:1&lt;/code&gt;&lt;span class=&quot;sg-verdict&quot;&gt;Pass&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;Secondary text&lt;/span&gt;&lt;code&gt;4.5:1&lt;/code&gt;&lt;span class=&quot;sg-verdict&quot;&gt;Pass&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;Text on panels&lt;/span&gt;&lt;code&gt;21.0:1&lt;/code&gt;&lt;span class=&quot;sg-verdict&quot;&gt;Pass&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;Primary button&lt;/span&gt;&lt;code&gt;17.2:1&lt;/code&gt;&lt;span class=&quot;sg-verdict&quot;&gt;Pass&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;Secondary button&lt;/span&gt;&lt;code&gt;21.0:1&lt;/code&gt;&lt;span class=&quot;sg-verdict&quot;&gt;Pass&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;Accent&lt;/span&gt;&lt;code&gt;21.0:1&lt;/code&gt;&lt;span class=&quot;sg-verdict&quot;&gt;Pass&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;/section&gt;
+&lt;section class=&quot;sg-scheme color-scheme-3&quot; aria-labelledby=&quot;scheme-3-title&quot;&gt;
+  &lt;header class=&quot;sg-scheme__head&quot;&gt;
+    &lt;p class=&quot;label&quot; id=&quot;scheme-3-title&quot;&gt;Scheme 3&lt;/p&gt;
+    &lt;p class=&quot;muted sg-small&quot;&gt;Spare: use it on any section you want to set apart&lt;/p&gt;
+  &lt;/header&gt;
+  &lt;p class=&quot;h3&quot;&gt;Every size in stock. Most ship today.&lt;/p&gt;
+  &lt;p&gt;Body text sits on the background in the text color. &lt;span class=&quot;muted&quot;&gt;Secondary text carries supporting detail.&lt;/span&gt;&lt;/p&gt;
+  &lt;div class=&quot;sg-row&quot;&gt;
+    &lt;span class=&quot;button&quot;&gt;Add to cart&lt;/span&gt;
+    &lt;span class=&quot;button button--secondary&quot;&gt;View details&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;sg-row&quot;&gt;
+    &lt;span class=&quot;chip&quot;&gt;In compare&lt;/span&gt;
+    &lt;span class=&quot;stock stock--in mono&quot;&gt;240 in stock&lt;/span&gt;
+    &lt;span class=&quot;stock stock--low mono&quot;&gt;Low stock: 4 left&lt;/span&gt;
+    &lt;span class=&quot;stock stock--out mono&quot;&gt;Out of stock&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;sg-row sg-row--fields&quot;&gt;
+    &lt;input class=&quot;input&quot; type=&quot;text&quot; placeholder=&quot;Search part number&quot; aria-label=&quot;Search part number (scheme-3)&quot;&gt;
+    &lt;select class=&quot;select&quot; aria-label=&quot;Sort (scheme-3)&quot;&gt;&lt;option&gt;Best selling&lt;/option&gt;&lt;/select&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;sg-panel&quot;&gt;
+    &lt;span class=&quot;part-number sg-small&quot;&gt;KC-CD18&lt;/span&gt;
+    &lt;div class=&quot;price price--sale&quot;&gt;&lt;span class=&quot;price__current&quot;&gt;$129.00&lt;/span&gt;&lt;s class=&quot;price__compare&quot;&gt;$159.00&lt;/s&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;ul class=&quot;sg-swatches&quot; role=&quot;list&quot;&gt;&lt;li&gt;&lt;span class=&quot;sg-swatch&quot; style=&quot;background:#FFFFFF&quot;&gt;&lt;/span&gt;&lt;span&gt;Background&lt;/span&gt;&lt;code&gt;#FFFFFF&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;sg-swatch&quot; style=&quot;background:#000000&quot;&gt;&lt;/span&gt;&lt;span&gt;Text&lt;/span&gt;&lt;code&gt;#000000&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;sg-swatch&quot; style=&quot;background:#595959&quot;&gt;&lt;/span&gt;&lt;span&gt;Secondary text&lt;/span&gt;&lt;code&gt;#595959&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;sg-swatch&quot; style=&quot;background:#CACACA&quot;&gt;&lt;/span&gt;&lt;span&gt;Lines&lt;/span&gt;&lt;code&gt;#CACACA&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;sg-swatch&quot; style=&quot;background:#F1F1F1&quot;&gt;&lt;/span&gt;&lt;span&gt;Panels&lt;/span&gt;&lt;code&gt;#F1F1F1&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;sg-swatch&quot; style=&quot;background:#F1F1F1&quot;&gt;&lt;/span&gt;&lt;span&gt;Product image&lt;/span&gt;&lt;code&gt;#F1F1F1&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;sg-swatch&quot; style=&quot;background:#1A1B1E&quot;&gt;&lt;/span&gt;&lt;span&gt;Primary button&lt;/span&gt;&lt;code&gt;#1A1B1E&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;sg-swatch&quot; style=&quot;background:#FFFFFF&quot;&gt;&lt;/span&gt;&lt;span&gt;Secondary button&lt;/span&gt;&lt;code&gt;#FFFFFF&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;sg-swatch&quot; style=&quot;background:#000000&quot;&gt;&lt;/span&gt;&lt;span&gt;Accent&lt;/span&gt;&lt;code&gt;#000000&lt;/code&gt;&lt;/li&gt;&lt;/ul&gt;
+  &lt;ul class=&quot;sg-checks&quot; role=&quot;list&quot; aria-label=&quot;Contrast, 4.5:1 needed for text&quot;&gt;&lt;li&gt;&lt;span&gt;Text&lt;/span&gt;&lt;code&gt;21.0:1&lt;/code&gt;&lt;span class=&quot;sg-verdict&quot;&gt;Pass&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;Secondary text&lt;/span&gt;&lt;code&gt;7.0:1&lt;/code&gt;&lt;span class=&quot;sg-verdict&quot;&gt;Pass&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;Text on panels&lt;/span&gt;&lt;code&gt;18.6:1&lt;/code&gt;&lt;span class=&quot;sg-verdict&quot;&gt;Pass&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;Primary button&lt;/span&gt;&lt;code&gt;17.2:1&lt;/code&gt;&lt;span class=&quot;sg-verdict&quot;&gt;Pass&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;Secondary button&lt;/span&gt;&lt;code&gt;21.0:1&lt;/code&gt;&lt;span class=&quot;sg-verdict&quot;&gt;Pass&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;Accent&lt;/span&gt;&lt;code&gt;21.0:1&lt;/code&gt;&lt;span class=&quot;sg-verdict&quot;&gt;Pass&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;/section&gt;
+&lt;section class=&quot;sg-scheme color-scheme-4&quot; aria-labelledby=&quot;scheme-4-title&quot;&gt;
+  &lt;header class=&quot;sg-scheme__head&quot;&gt;
+    &lt;p class=&quot;label&quot; id=&quot;scheme-4-title&quot;&gt;Scheme 4&lt;/p&gt;
+    &lt;p class=&quot;muted sg-small&quot;&gt;Stat bar and newsletter&lt;/p&gt;
+  &lt;/header&gt;
+  &lt;p class=&quot;h3&quot;&gt;Every size in stock. Most ship today.&lt;/p&gt;
+  &lt;p&gt;Body text sits on the background in the text color. &lt;span class=&quot;muted&quot;&gt;Secondary text carries supporting detail.&lt;/span&gt;&lt;/p&gt;
+  &lt;div class=&quot;sg-row&quot;&gt;
+    &lt;span class=&quot;button&quot;&gt;Add to cart&lt;/span&gt;
+    &lt;span class=&quot;button button--secondary&quot;&gt;View details&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;sg-row&quot;&gt;
+    &lt;span class=&quot;chip&quot;&gt;In compare&lt;/span&gt;
+    &lt;span class=&quot;stock stock--in mono&quot;&gt;240 in stock&lt;/span&gt;
+    &lt;span class=&quot;stock stock--low mono&quot;&gt;Low stock: 4 left&lt;/span&gt;
+    &lt;span class=&quot;stock stock--out mono&quot;&gt;Out of stock&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;sg-row sg-row--fields&quot;&gt;
+    &lt;input class=&quot;input&quot; type=&quot;text&quot; placeholder=&quot;Search part number&quot; aria-label=&quot;Search part number (scheme-4)&quot;&gt;
+    &lt;select class=&quot;select&quot; aria-label=&quot;Sort (scheme-4)&quot;&gt;&lt;option&gt;Best selling&lt;/option&gt;&lt;/select&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;sg-panel&quot;&gt;
+    &lt;span class=&quot;part-number sg-small&quot;&gt;KC-CD18&lt;/span&gt;
+    &lt;div class=&quot;price price--sale&quot;&gt;&lt;span class=&quot;price__current&quot;&gt;$129.00&lt;/span&gt;&lt;s class=&quot;price__compare&quot;&gt;$159.00&lt;/s&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;ul class=&quot;sg-swatches&quot; role=&quot;list&quot;&gt;&lt;li&gt;&lt;span class=&quot;sg-swatch&quot; style=&quot;background:#1A1B1E&quot;&gt;&lt;/span&gt;&lt;span&gt;Background&lt;/span&gt;&lt;code&gt;#1A1B1E&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;sg-swatch&quot; style=&quot;background:#FFFFFF&quot;&gt;&lt;/span&gt;&lt;span&gt;Text&lt;/span&gt;&lt;code&gt;#FFFFFF&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;sg-swatch&quot; style=&quot;background:#A6A6A6&quot;&gt;&lt;/span&gt;&lt;span&gt;Secondary text&lt;/span&gt;&lt;code&gt;#A6A6A6&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;sg-swatch&quot; style=&quot;background:#404040&quot;&gt;&lt;/span&gt;&lt;span&gt;Lines&lt;/span&gt;&lt;code&gt;#404040&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;sg-swatch&quot; style=&quot;background:#26272A&quot;&gt;&lt;/span&gt;&lt;span&gt;Panels&lt;/span&gt;&lt;code&gt;#26272A&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;sg-swatch&quot; style=&quot;background:#2F3033&quot;&gt;&lt;/span&gt;&lt;span&gt;Product image&lt;/span&gt;&lt;code&gt;#2F3033&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;sg-swatch&quot; style=&quot;background:#FFFFFF&quot;&gt;&lt;/span&gt;&lt;span&gt;Primary button&lt;/span&gt;&lt;code&gt;#FFFFFF&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;sg-swatch&quot; style=&quot;background:#1A1B1E&quot;&gt;&lt;/span&gt;&lt;span&gt;Secondary button&lt;/span&gt;&lt;code&gt;#1A1B1E&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;sg-swatch&quot; style=&quot;background:#FFFFFF&quot;&gt;&lt;/span&gt;&lt;span&gt;Accent&lt;/span&gt;&lt;code&gt;#FFFFFF&lt;/code&gt;&lt;/li&gt;&lt;/ul&gt;
+  &lt;ul class=&quot;sg-checks&quot; role=&quot;list&quot; aria-label=&quot;Contrast, 4.5:1 needed for text&quot;&gt;&lt;li&gt;&lt;span&gt;Text&lt;/span&gt;&lt;code&gt;17.2:1&lt;/code&gt;&lt;span class=&quot;sg-verdict&quot;&gt;Pass&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;Secondary text&lt;/span&gt;&lt;code&gt;7.1:1&lt;/code&gt;&lt;span class=&quot;sg-verdict&quot;&gt;Pass&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;Text on panels&lt;/span&gt;&lt;code&gt;14.9:1&lt;/code&gt;&lt;span class=&quot;sg-verdict&quot;&gt;Pass&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;Primary button&lt;/span&gt;&lt;code&gt;21.0:1&lt;/code&gt;&lt;span class=&quot;sg-verdict&quot;&gt;Pass&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;Secondary button&lt;/span&gt;&lt;code&gt;17.2:1&lt;/code&gt;&lt;span class=&quot;sg-verdict&quot;&gt;Pass&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;Accent&lt;/span&gt;&lt;code&gt;21.0:1&lt;/code&gt;&lt;span class=&quot;sg-verdict&quot;&gt;Pass&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;/section&gt;&lt;/div&gt;
+&lt;div class=&quot;sg-buy&quot;&gt;
+  &lt;p class=&quot;label&quot;&gt;Buy area, scheme 1&lt;/p&gt;
+  &lt;div class=&quot;product-form__row&quot; style=&quot;margin-top:10px&quot;&gt;
+    &lt;div class=&quot;quantity&quot;&gt;
+      &lt;button type=&quot;button&quot; class=&quot;quantity__button&quot; aria-label=&quot;Decrease quantity&quot;&gt;&lt;svg class=&quot;icon&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.5&quot; stroke-linecap=&quot;square&quot; aria-hidden=&quot;true&quot; focusable=&quot;false&quot;&gt;&lt;path d=&quot;M5 12h14&quot;/&gt;&lt;/svg&gt;&lt;/button&gt;
+      &lt;input class=&quot;quantity__input mono&quot; type=&quot;number&quot; value=&quot;1&quot; aria-label=&quot;Quantity&quot;&gt;
+      &lt;button type=&quot;button&quot; class=&quot;quantity__button&quot; aria-label=&quot;Increase quantity&quot;&gt;&lt;svg class=&quot;icon&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.5&quot; stroke-linecap=&quot;square&quot; aria-hidden=&quot;true&quot; focusable=&quot;false&quot;&gt;&lt;path d=&quot;M12 5v14M5 12h14&quot;/&gt;&lt;/svg&gt;&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;span class=&quot;button button--large product-form__submit&quot;&gt;Add to cart&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;product-form__dynamic&quot;&gt;&lt;div class=&quot;shopify-payment-button&quot;&gt;&lt;span class=&quot;shopify-payment-button__button shopify-payment-button__button--unbranded&quot;&gt;Buy it now&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/body&gt;&lt;/html&gt;"></iframe>
+      <h3>Style settings</h3>
+      <p>Found in <strong>Theme settings &gt; Style</strong> and <strong>Typography</strong>.</p>
+      <div class="table-wrap"><table><thead><tr><th>Setting</th><th>Caliper</th></tr></thead><tbody><tr><td>Heading case</td><td>Uppercase</td></tr><tr><td>Heading size</td><td>100%</td></tr><tr><td>Labels and buttons</td><td>Heading font</td></tr><tr><td>Logo position</td><td>Center</td></tr><tr><td>Menu style</td><td>Pill buttons</td></tr><tr><td>Show text logo in a box</td><td>On</td></tr><tr><td>Homepage hero layout</td><td>Two photos with headline</td></tr><tr><td>Button corner radius</td><td>Fully rounded</td></tr><tr><td>Image corner radius</td><td>12px</td></tr><tr><td>Outline panels and cards</td><td>Off</td></tr><tr><td>Filter style</td><td>Pills</td></tr><tr><td>Fill table headers with the accent color</td><td>Off</td></tr><tr><td>Stock marker</td><td>Dot</td></tr><tr><td>Page title background</td><td>None</td></tr><tr><td>Datasheet layout</td><td>Index and panel</td></tr><tr><td>Page width</td><td>Standard</td></tr><tr><td>Page margin</td><td>22px</td></tr></tbody></table></div>
+    </section>
+    <section class="doc" id="hi-vis">
+      <p class="label">Preset</p>
+      <h2>Hi-vis</h2>
+      <p>Safety yellow header, serif headings, outlined panels, badge stock markers.</p>
+      <h3>Fonts</h3>
+      <div class="table-wrap"><table><thead><tr><th>Role</th><th>Font</th><th>Used for</th></tr></thead><tbody><tr><td>Headings</td><td>Times New Roman, 400</td><td>Page titles, section headings, large prices</td></tr><tr><td>Body</td><td>Times New Roman, 400</td><td>Paragraphs, descriptions, policies</td></tr><tr><td>Technical text</td><td>Arimo, 400</td><td>Part numbers, prices, specs, stock</td></tr><tr><td>Labels and buttons</td><td>Same as technical text</td><td>Eyebrows, buttons, table headers</td></tr></tbody></table></div>
+      <h3>Color schemes and components</h3>
+      <p>Rendered with the theme's own stylesheets. Each scheme lists its colors and the contrast of each text pairing; body text needs 4.5:1.</p>
+      <iframe class="sg-frame" title="Hi-vis preset: type, color schemes and components" loading="lazy" srcdoc="&lt;!doctype html&gt;
+&lt;html lang=&quot;en&quot;&gt;&lt;head&gt;&lt;meta charset=&quot;utf-8&quot;&gt;&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+&lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.googleapis.com&quot;&gt;&lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.gstatic.com&quot; crossorigin&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&amp;display=swap&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;theme/critical.css&quot;&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;theme/base.css&quot;&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;theme/section-product.css&quot;&gt;
+&lt;style&gt;
+:root {
+  --font-heading-family: &#x27;Times New Roman&#x27;, Times, Georgia, serif; --font-heading-weight: 400; --font-heading-style: normal;
+  --heading-case: uppercase; --heading-scale: 1.0;
+  --font-body-family: &#x27;Times New Roman&#x27;, Times, Georgia, serif; --font-body-weight: 400; --font-body-weight-bold: 700; --font-body-style: normal;
+  --font-mono-family: &#x27;Arimo&#x27;, sans-serif; --font-mono-weight: 400; --font-mono-weight-bold: 700;
+  --font-label-family: &#x27;Arimo&#x27;, sans-serif; --font-label-weight: 400; --label-size: 0.6875rem; --label-tracking: 0.08em;
+  --page-width: 1200px; --page-margin: 30px; --page-margin-phone: min(30px, 20px);
+  --radius-button: 999px; --radius-image: 0px;
+  --panel-border-width: 1px;
+}
+:root, .color-scheme-1 { --color-background: #C8CBCD; --gradient-background: #C8CBCD; --color-text: #231F20; --color-muted: #474747; --color-rule: #231F20; --color-panel: #FFFFFF; --color-specimen: #FFFFFF; --color-button: #FFD931; --color-button-label: #231F20; --color-secondary-button: #FFFFFF; --color-secondary-button-label: #231F20; --color-accent: #FFD931; --color-accent-label: #231F20; }
+.color-scheme-2 { --color-background: #FFD931; --gradient-background: #FFD931; --color-text: #231F20; --color-muted: #474747; --color-rule: #231F20; --color-panel: #FFFFFF; --color-specimen: #FFFFFF; --color-button: #231F20; --color-button-label: #FFD931; --color-secondary-button: #FFFFFF; --color-secondary-button-label: #231F20; --color-accent: #231F20; --color-accent-label: #FFD931; }
+.color-scheme-3 { --color-background: #FFFFFF; --gradient-background: #FFFFFF; --color-text: #231F20; --color-muted: #555555; --color-rule: #D6D6D6; --color-panel: #FFFFFF; --color-specimen: #FFFFFF; --color-button: #FFD931; --color-button-label: #231F20; --color-secondary-button: #FFFFFF; --color-secondary-button-label: #231F20; --color-accent: #FFD931; --color-accent-label: #231F20; }
+.color-scheme-4 { --color-background: #231F20; --gradient-background: #231F20; --color-text: #FFFFFF; --color-muted: #B5B5B5; --color-rule: #4A4A4A; --color-panel: #2E2A2B; --color-specimen: #332E2F; --color-button: #FFD931; --color-button-label: #231F20; --color-secondary-button: #231F20; --color-secondary-button-label: #FFD931; --color-accent: #FFD931; --color-accent-label: #231F20; }
+html, body { min-height: 0; }
+body { display: block; background: var(--color-background); padding: 24px; }
+.sg-type { display: grid; gap: 14px; padding-bottom: 28px; }
+.sg-type__meta { display: flex; flex-wrap: wrap; gap: 8px 20px; }
+.sg-schemes { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 12px; }
+.sg-scheme { display: grid; align-content: start; gap: 14px; padding: 20px; border-radius: max(var(--radius-image), 4px);
+  background: var(--color-background); color: var(--color-text); border: 1px solid var(--color-rule); }
+.sg-scheme__head { display: grid; gap: 2px; }
+.sg-small { font-size: 0.8125rem; }
+.sg-row { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; }
+.sg-row--fields { display: grid; grid-template-columns: minmax(0, 3fr) minmax(0, 2fr); }
+.sg-panel { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; padding: 12px 14px;
+  background: var(--color-panel); border: var(--panel-border-width) solid var(--color-rule); border-radius: max(var(--radius-image), 4px); }
+.sg-swatches, .sg-checks { display: grid; gap: 6px; margin: 0; padding: 0; list-style: none; font-size: 0.8125rem; }
+.sg-swatches li, .sg-checks li { display: grid; grid-template-columns: 22px minmax(0, 1fr) auto; align-items: center; gap: 10px; }
+.sg-checks li { grid-template-columns: minmax(0, 1fr) auto 5.5rem; padding-top: 6px; border-top: 1px solid var(--color-rule); }
+.sg-swatch { width: 22px; height: 22px; border-radius: 50%; box-shadow: inset 0 0 0 1px var(--color-rule); }
+.sg-swatches code, .sg-checks code { font-family: var(--font-mono-family); }
+.sg-verdict { text-align: end; font-family: var(--font-label-family); font-size: var(--label-size); letter-spacing: var(--label-tracking); text-transform: uppercase; }
+.sg-buy { display: grid; gap: 0; max-width: 26rem; padding-top: 28px; }
+.sg-buy .product-form__row { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.sg-buy .product-form__submit { flex: 1 1 8rem; }
+.sg-buy .quantity__button { color: inherit; }
+&lt;/style&gt;&lt;/head&gt;
+&lt;body class=&quot;color-scheme-1&quot; data-menu=&quot;text&quot; data-filters=&quot;list&quot; data-stock=&quot;badge&quot; data-table-head=&quot;filled&quot;&gt;
+&lt;div class=&quot;sg-type&quot;&gt;
+  &lt;p class=&quot;label&quot;&gt;Parts by the code on the part&lt;/p&gt;
+  &lt;p class=&quot;h0&quot;&gt;Match it. Fit it. Today.&lt;/p&gt;
+  &lt;p class=&quot;h2&quot;&gt;Parts that match the old one&lt;/p&gt;
+  &lt;p class=&quot;h4&quot;&gt;Pads and discs by size&lt;/p&gt;
+  &lt;p style=&quot;max-width:60ch&quot;&gt;Bulbs by base, batteries by group, brake pads by size. Order before 2pm for same-day dispatch.&lt;/p&gt;
+  &lt;div class=&quot;sg-type__meta&quot;&gt;&lt;span class=&quot;part-number&quot;&gt;KC-CD18&lt;/span&gt;&lt;span class=&quot;price&quot;&gt;$129.00&lt;/span&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sg-schemes&quot;&gt;
+&lt;section class=&quot;sg-scheme color-scheme-1&quot; aria-labelledby=&quot;scheme-1-title&quot;&gt;
+  &lt;header class=&quot;sg-scheme__head&quot;&gt;
+    &lt;p class=&quot;label&quot; id=&quot;scheme-1-title&quot;&gt;Scheme 1&lt;/p&gt;
+    &lt;p class=&quot;muted sg-small&quot;&gt;Pages and most sections&lt;/p&gt;
+  &lt;/header&gt;
+  &lt;p class=&quot;h3&quot;&gt;Match it. Fit it. Today.&lt;/p&gt;
+  &lt;p&gt;Body text sits on the background in the text color. &lt;span class=&quot;muted&quot;&gt;Secondary text carries supporting detail.&lt;/span&gt;&lt;/p&gt;
+  &lt;div class=&quot;sg-row&quot;&gt;
+    &lt;span class=&quot;button&quot;&gt;Add to cart&lt;/span&gt;
+    &lt;span class=&quot;button button--secondary&quot;&gt;View details&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;sg-row&quot;&gt;
+    &lt;span class=&quot;chip&quot;&gt;In compare&lt;/span&gt;
+    &lt;span class=&quot;stock stock--in mono&quot;&gt;240 in stock&lt;/span&gt;
+    &lt;span class=&quot;stock stock--low mono&quot;&gt;Low stock: 4 left&lt;/span&gt;
+    &lt;span class=&quot;stock stock--out mono&quot;&gt;Out of stock&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;sg-row sg-row--fields&quot;&gt;
+    &lt;input class=&quot;input&quot; type=&quot;text&quot; placeholder=&quot;Search part number&quot; aria-label=&quot;Search part number (scheme-1)&quot;&gt;
+    &lt;select class=&quot;select&quot; aria-label=&quot;Sort (scheme-1)&quot;&gt;&lt;option&gt;Best selling&lt;/option&gt;&lt;/select&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;sg-panel&quot;&gt;
+    &lt;span class=&quot;part-number sg-small&quot;&gt;KC-CD18&lt;/span&gt;
+    &lt;div class=&quot;price price--sale&quot;&gt;&lt;span class=&quot;price__current&quot;&gt;$129.00&lt;/span&gt;&lt;s class=&quot;price__compare&quot;&gt;$159.00&lt;/s&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;ul class=&quot;sg-swatches&quot; role=&quot;list&quot;&gt;&lt;li&gt;&lt;span class=&quot;sg-swatch&quot; style=&quot;background:#C8CBCD&quot;&gt;&lt;/span&gt;&lt;span&gt;Background&lt;/span&gt;&lt;code&gt;#C8CBCD&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;sg-swatch&quot; style=&quot;background:#231F20&quot;&gt;&lt;/span&gt;&lt;span&gt;Text&lt;/span&gt;&lt;code&gt;#231F20&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;sg-swatch&quot; style=&quot;background:#474747&quot;&gt;&lt;/span&gt;&lt;span&gt;Secondary text&lt;/span&gt;&lt;code&gt;#474747&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;sg-swatch&quot; style=&quot;background:#231F20&quot;&gt;&lt;/span&gt;&lt;span&gt;Lines&lt;/span&gt;&lt;code&gt;#231F20&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;sg-swatch&quot; style=&quot;background:#FFFFFF&quot;&gt;&lt;/span&gt;&lt;span&gt;Panels&lt;/span&gt;&lt;code&gt;#FFFFFF&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;sg-swatch&quot; style=&quot;background:#FFFFFF&quot;&gt;&lt;/span&gt;&lt;span&gt;Product image&lt;/span&gt;&lt;code&gt;#FFFFFF&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;sg-swatch&quot; style=&quot;background:#FFD931&quot;&gt;&lt;/span&gt;&lt;span&gt;Primary button&lt;/span&gt;&lt;code&gt;#FFD931&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;sg-swatch&quot; style=&quot;background:#FFFFFF&quot;&gt;&lt;/span&gt;&lt;span&gt;Secondary button&lt;/span&gt;&lt;code&gt;#FFFFFF&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;sg-swatch&quot; style=&quot;background:#FFD931&quot;&gt;&lt;/span&gt;&lt;span&gt;Accent&lt;/span&gt;&lt;code&gt;#FFD931&lt;/code&gt;&lt;/li&gt;&lt;/ul&gt;
+  &lt;ul class=&quot;sg-checks&quot; role=&quot;list&quot; aria-label=&quot;Contrast, 4.5:1 needed for text&quot;&gt;&lt;li&gt;&lt;span&gt;Text&lt;/span&gt;&lt;code&gt;10.0:1&lt;/code&gt;&lt;span class=&quot;sg-verdict&quot;&gt;Pass&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;Secondary text&lt;/span&gt;&lt;code&gt;5.7:1&lt;/code&gt;&lt;span class=&quot;sg-verdict&quot;&gt;Pass&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;Text on panels&lt;/span&gt;&lt;code&gt;16.3:1&lt;/code&gt;&lt;span class=&quot;sg-verdict&quot;&gt;Pass&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;Primary button&lt;/span&gt;&lt;code&gt;11.8:1&lt;/code&gt;&lt;span class=&quot;sg-verdict&quot;&gt;Pass&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;Secondary button&lt;/span&gt;&lt;code&gt;16.3:1&lt;/code&gt;&lt;span class=&quot;sg-verdict&quot;&gt;Pass&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;Accent&lt;/span&gt;&lt;code&gt;11.8:1&lt;/code&gt;&lt;span class=&quot;sg-verdict&quot;&gt;Pass&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;/section&gt;
+&lt;section class=&quot;sg-scheme color-scheme-2&quot; aria-labelledby=&quot;scheme-2-title&quot;&gt;
+  &lt;header class=&quot;sg-scheme__head&quot;&gt;
+    &lt;p class=&quot;label&quot; id=&quot;scheme-2-title&quot;&gt;Scheme 2&lt;/p&gt;
+    &lt;p class=&quot;muted sg-small&quot;&gt;Header, footer and announcement bar&lt;/p&gt;
+  &lt;/header&gt;
+  &lt;p class=&quot;h3&quot;&gt;Match it. Fit it. Today.&lt;/p&gt;
+  &lt;p&gt;Body text sits on the background in the text color. &lt;span class=&quot;muted&quot;&gt;Secondary text carries supporting detail.&lt;/span&gt;&lt;/p&gt;
+  &lt;div class=&quot;sg-row&quot;&gt;
+    &lt;span class=&quot;button&quot;&gt;Add to cart&lt;/span&gt;
+    &lt;span class=&quot;button button--secondary&quot;&gt;View details&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;sg-row&quot;&gt;
+    &lt;span class=&quot;chip&quot;&gt;In compare&lt;/span&gt;
+    &lt;span class=&quot;stock stock--in mono&quot;&gt;240 in stock&lt;/span&gt;
+    &lt;span class=&quot;stock stock--low mono&quot;&gt;Low stock: 4 left&lt;/span&gt;
+    &lt;span class=&quot;stock stock--out mono&quot;&gt;Out of stock&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;sg-row sg-row--fields&quot;&gt;
+    &lt;input class=&quot;input&quot; type=&quot;text&quot; placeholder=&quot;Search part number&quot; aria-label=&quot;Search part number (scheme-2)&quot;&gt;
+    &lt;select class=&quot;select&quot; aria-label=&quot;Sort (scheme-2)&quot;&gt;&lt;option&gt;Best selling&lt;/option&gt;&lt;/select&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;sg-panel&quot;&gt;
+    &lt;span class=&quot;part-number sg-small&quot;&gt;KC-CD18&lt;/span&gt;
+    &lt;div class=&quot;price price--sale&quot;&gt;&lt;span class=&quot;price__current&quot;&gt;$129.00&lt;/span&gt;&lt;s class=&quot;price__compare&quot;&gt;$159.00&lt;/s&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;ul class=&quot;sg-swatches&quot; role=&quot;list&quot;&gt;&lt;li&gt;&lt;span class=&quot;sg-swatch&quot; style=&quot;background:#FFD931&quot;&gt;&lt;/span&gt;&lt;span&gt;Background&lt;/span&gt;&lt;code&gt;#FFD931&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;sg-swatch&quot; style=&quot;background:#231F20&quot;&gt;&lt;/span&gt;&lt;span&gt;Text&lt;/span&gt;&lt;code&gt;#231F20&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;sg-swatch&quot; style=&quot;background:#474747&quot;&gt;&lt;/span&gt;&lt;span&gt;Secondary text&lt;/span&gt;&lt;code&gt;#474747&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;sg-swatch&quot; style=&quot;background:#231F20&quot;&gt;&lt;/span&gt;&lt;span&gt;Lines&lt;/span&gt;&lt;code&gt;#231F20&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;sg-swatch&quot; style=&quot;background:#FFFFFF&quot;&gt;&lt;/span&gt;&lt;span&gt;Panels&lt;/span&gt;&lt;code&gt;#FFFFFF&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;sg-swatch&quot; style=&quot;background:#FFFFFF&quot;&gt;&lt;/span&gt;&lt;span&gt;Product image&lt;/span&gt;&lt;code&gt;#FFFFFF&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;sg-swatch&quot; style=&quot;background:#231F20&quot;&gt;&lt;/span&gt;&lt;span&gt;Primary button&lt;/span&gt;&lt;code&gt;#231F20&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;sg-swatch&quot; style=&quot;background:#FFFFFF&quot;&gt;&lt;/span&gt;&lt;span&gt;Secondary button&lt;/span&gt;&lt;code&gt;#FFFFFF&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;sg-swatch&quot; style=&quot;background:#231F20&quot;&gt;&lt;/span&gt;&lt;span&gt;Accent&lt;/span&gt;&lt;code&gt;#231F20&lt;/code&gt;&lt;/li&gt;&lt;/ul&gt;
+  &lt;ul class=&quot;sg-checks&quot; role=&quot;list&quot; aria-label=&quot;Contrast, 4.5:1 needed for text&quot;&gt;&lt;li&gt;&lt;span&gt;Text&lt;/span&gt;&lt;code&gt;11.8:1&lt;/code&gt;&lt;span class=&quot;sg-verdict&quot;&gt;Pass&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;Secondary text&lt;/span&gt;&lt;code&gt;6.7:1&lt;/code&gt;&lt;span class=&quot;sg-verdict&quot;&gt;Pass&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;Text on panels&lt;/span&gt;&lt;code&gt;16.3:1&lt;/code&gt;&lt;span class=&quot;sg-verdict&quot;&gt;Pass&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;Primary button&lt;/span&gt;&lt;code&gt;11.8:1&lt;/code&gt;&lt;span class=&quot;sg-verdict&quot;&gt;Pass&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;Secondary button&lt;/span&gt;&lt;code&gt;16.3:1&lt;/code&gt;&lt;span class=&quot;sg-verdict&quot;&gt;Pass&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;Accent&lt;/span&gt;&lt;code&gt;11.8:1&lt;/code&gt;&lt;span class=&quot;sg-verdict&quot;&gt;Pass&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;/section&gt;
+&lt;section class=&quot;sg-scheme color-scheme-3&quot; aria-labelledby=&quot;scheme-3-title&quot;&gt;
+  &lt;header class=&quot;sg-scheme__head&quot;&gt;
+    &lt;p class=&quot;label&quot; id=&quot;scheme-3-title&quot;&gt;Scheme 3&lt;/p&gt;
+    &lt;p class=&quot;muted sg-small&quot;&gt;Spare: use it on any section you want to set apart&lt;/p&gt;
+  &lt;/header&gt;
+  &lt;p class=&quot;h3&quot;&gt;Match it. Fit it. Today.&lt;/p&gt;
+  &lt;p&gt;Body text sits on the background in the text color. &lt;span class=&quot;muted&quot;&gt;Secondary text carries supporting detail.&lt;/span&gt;&lt;/p&gt;
+  &lt;div class=&quot;sg-row&quot;&gt;
+    &lt;span class=&quot;button&quot;&gt;Add to cart&lt;/span&gt;
+    &lt;span class=&quot;button button--secondary&quot;&gt;View details&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;sg-row&quot;&gt;
+    &lt;span class=&quot;chip&quot;&gt;In compare&lt;/span&gt;
+    &lt;span class=&quot;stock stock--in mono&quot;&gt;240 in stock&lt;/span&gt;
+    &lt;span class=&quot;stock stock--low mono&quot;&gt;Low stock: 4 left&lt;/span&gt;
+    &lt;span class=&quot;stock stock--out mono&quot;&gt;Out of stock&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;sg-row sg-row--fields&quot;&gt;
+    &lt;input class=&quot;input&quot; type=&quot;text&quot; placeholder=&quot;Search part number&quot; aria-label=&quot;Search part number (scheme-3)&quot;&gt;
+    &lt;select class=&quot;select&quot; aria-label=&quot;Sort (scheme-3)&quot;&gt;&lt;option&gt;Best selling&lt;/option&gt;&lt;/select&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;sg-panel&quot;&gt;
+    &lt;span class=&quot;part-number sg-small&quot;&gt;KC-CD18&lt;/span&gt;
+    &lt;div class=&quot;price price--sale&quot;&gt;&lt;span class=&quot;price__current&quot;&gt;$129.00&lt;/span&gt;&lt;s class=&quot;price__compare&quot;&gt;$159.00&lt;/s&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;ul class=&quot;sg-swatches&quot; role=&quot;list&quot;&gt;&lt;li&gt;&lt;span class=&quot;sg-swatch&quot; style=&quot;background:#FFFFFF&quot;&gt;&lt;/span&gt;&lt;span&gt;Background&lt;/span&gt;&lt;code&gt;#FFFFFF&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;sg-swatch&quot; style=&quot;background:#231F20&quot;&gt;&lt;/span&gt;&lt;span&gt;Text&lt;/span&gt;&lt;code&gt;#231F20&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;sg-swatch&quot; style=&quot;background:#555555&quot;&gt;&lt;/span&gt;&lt;span&gt;Secondary text&lt;/span&gt;&lt;code&gt;#555555&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;sg-swatch&quot; style=&quot;background:#D6D6D6&quot;&gt;&lt;/span&gt;&lt;span&gt;Lines&lt;/span&gt;&lt;code&gt;#D6D6D6&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;sg-swatch&quot; style=&quot;background:#FFFFFF&quot;&gt;&lt;/span&gt;&lt;span&gt;Panels&lt;/span&gt;&lt;code&gt;#FFFFFF&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;sg-swatch&quot; style=&quot;background:#FFFFFF&quot;&gt;&lt;/span&gt;&lt;span&gt;Product image&lt;/span&gt;&lt;code&gt;#FFFFFF&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;sg-swatch&quot; style=&quot;background:#FFD931&quot;&gt;&lt;/span&gt;&lt;span&gt;Primary button&lt;/span&gt;&lt;code&gt;#FFD931&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;sg-swatch&quot; style=&quot;background:#FFFFFF&quot;&gt;&lt;/span&gt;&lt;span&gt;Secondary button&lt;/span&gt;&lt;code&gt;#FFFFFF&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;sg-swatch&quot; style=&quot;background:#FFD931&quot;&gt;&lt;/span&gt;&lt;span&gt;Accent&lt;/span&gt;&lt;code&gt;#FFD931&lt;/code&gt;&lt;/li&gt;&lt;/ul&gt;
+  &lt;ul class=&quot;sg-checks&quot; role=&quot;list&quot; aria-label=&quot;Contrast, 4.5:1 needed for text&quot;&gt;&lt;li&gt;&lt;span&gt;Text&lt;/span&gt;&lt;code&gt;16.3:1&lt;/code&gt;&lt;span class=&quot;sg-verdict&quot;&gt;Pass&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;Secondary text&lt;/span&gt;&lt;code&gt;7.5:1&lt;/code&gt;&lt;span class=&quot;sg-verdict&quot;&gt;Pass&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;Text on panels&lt;/span&gt;&lt;code&gt;16.3:1&lt;/code&gt;&lt;span class=&quot;sg-verdict&quot;&gt;Pass&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;Primary button&lt;/span&gt;&lt;code&gt;11.8:1&lt;/code&gt;&lt;span class=&quot;sg-verdict&quot;&gt;Pass&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;Secondary button&lt;/span&gt;&lt;code&gt;16.3:1&lt;/code&gt;&lt;span class=&quot;sg-verdict&quot;&gt;Pass&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;Accent&lt;/span&gt;&lt;code&gt;11.8:1&lt;/code&gt;&lt;span class=&quot;sg-verdict&quot;&gt;Pass&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;/section&gt;
+&lt;section class=&quot;sg-scheme color-scheme-4&quot; aria-labelledby=&quot;scheme-4-title&quot;&gt;
+  &lt;header class=&quot;sg-scheme__head&quot;&gt;
+    &lt;p class=&quot;label&quot; id=&quot;scheme-4-title&quot;&gt;Scheme 4&lt;/p&gt;
+    &lt;p class=&quot;muted sg-small&quot;&gt;Stat bar and newsletter&lt;/p&gt;
+  &lt;/header&gt;
+  &lt;p class=&quot;h3&quot;&gt;Match it. Fit it. Today.&lt;/p&gt;
+  &lt;p&gt;Body text sits on the background in the text color. &lt;span class=&quot;muted&quot;&gt;Secondary text carries supporting detail.&lt;/span&gt;&lt;/p&gt;
+  &lt;div class=&quot;sg-row&quot;&gt;
+    &lt;span class=&quot;button&quot;&gt;Add to cart&lt;/span&gt;
+    &lt;span class=&quot;button button--secondary&quot;&gt;View details&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;sg-row&quot;&gt;
+    &lt;span class=&quot;chip&quot;&gt;In compare&lt;/span&gt;
+    &lt;span class=&quot;stock stock--in mono&quot;&gt;240 in stock&lt;/span&gt;
+    &lt;span class=&quot;stock stock--low mono&quot;&gt;Low stock: 4 left&lt;/span&gt;
+    &lt;span class=&quot;stock stock--out mono&quot;&gt;Out of stock&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;sg-row sg-row--fields&quot;&gt;
+    &lt;input class=&quot;input&quot; type=&quot;text&quot; placeholder=&quot;Search part number&quot; aria-label=&quot;Search part number (scheme-4)&quot;&gt;
+    &lt;select class=&quot;select&quot; aria-label=&quot;Sort (scheme-4)&quot;&gt;&lt;option&gt;Best selling&lt;/option&gt;&lt;/select&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;sg-panel&quot;&gt;
+    &lt;span class=&quot;part-number sg-small&quot;&gt;KC-CD18&lt;/span&gt;
+    &lt;div class=&quot;price price--sale&quot;&gt;&lt;span class=&quot;price__current&quot;&gt;$129.00&lt;/span&gt;&lt;s class=&quot;price__compare&quot;&gt;$159.00&lt;/s&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;ul class=&quot;sg-swatches&quot; role=&quot;list&quot;&gt;&lt;li&gt;&lt;span class=&quot;sg-swatch&quot; style=&quot;background:#231F20&quot;&gt;&lt;/span&gt;&lt;span&gt;Background&lt;/span&gt;&lt;code&gt;#231F20&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;sg-swatch&quot; style=&quot;background:#FFFFFF&quot;&gt;&lt;/span&gt;&lt;span&gt;Text&lt;/span&gt;&lt;code&gt;#FFFFFF&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;sg-swatch&quot; style=&quot;background:#B5B5B5&quot;&gt;&lt;/span&gt;&lt;span&gt;Secondary text&lt;/span&gt;&lt;code&gt;#B5B5B5&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;sg-swatch&quot; style=&quot;background:#4A4A4A&quot;&gt;&lt;/span&gt;&lt;span&gt;Lines&lt;/span&gt;&lt;code&gt;#4A4A4A&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;sg-swatch&quot; style=&quot;background:#2E2A2B&quot;&gt;&lt;/span&gt;&lt;span&gt;Panels&lt;/span&gt;&lt;code&gt;#2E2A2B&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;sg-swatch&quot; style=&quot;background:#332E2F&quot;&gt;&lt;/span&gt;&lt;span&gt;Product image&lt;/span&gt;&lt;code&gt;#332E2F&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;sg-swatch&quot; style=&quot;background:#FFD931&quot;&gt;&lt;/span&gt;&lt;span&gt;Primary button&lt;/span&gt;&lt;code&gt;#FFD931&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;sg-swatch&quot; style=&quot;background:#231F20&quot;&gt;&lt;/span&gt;&lt;span&gt;Secondary button&lt;/span&gt;&lt;code&gt;#231F20&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;sg-swatch&quot; style=&quot;background:#FFD931&quot;&gt;&lt;/span&gt;&lt;span&gt;Accent&lt;/span&gt;&lt;code&gt;#FFD931&lt;/code&gt;&lt;/li&gt;&lt;/ul&gt;
+  &lt;ul class=&quot;sg-checks&quot; role=&quot;list&quot; aria-label=&quot;Contrast, 4.5:1 needed for text&quot;&gt;&lt;li&gt;&lt;span&gt;Text&lt;/span&gt;&lt;code&gt;16.3:1&lt;/code&gt;&lt;span class=&quot;sg-verdict&quot;&gt;Pass&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;Secondary text&lt;/span&gt;&lt;code&gt;7.9:1&lt;/code&gt;&lt;span class=&quot;sg-verdict&quot;&gt;Pass&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;Text on panels&lt;/span&gt;&lt;code&gt;14.2:1&lt;/code&gt;&lt;span class=&quot;sg-verdict&quot;&gt;Pass&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;Primary button&lt;/span&gt;&lt;code&gt;11.8:1&lt;/code&gt;&lt;span class=&quot;sg-verdict&quot;&gt;Pass&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;Secondary button&lt;/span&gt;&lt;code&gt;11.8:1&lt;/code&gt;&lt;span class=&quot;sg-verdict&quot;&gt;Pass&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;Accent&lt;/span&gt;&lt;code&gt;11.8:1&lt;/code&gt;&lt;span class=&quot;sg-verdict&quot;&gt;Pass&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;/section&gt;&lt;/div&gt;
+&lt;div class=&quot;sg-buy&quot;&gt;
+  &lt;p class=&quot;label&quot;&gt;Buy area, scheme 1&lt;/p&gt;
+  &lt;div class=&quot;product-form__row&quot; style=&quot;margin-top:10px&quot;&gt;
+    &lt;div class=&quot;quantity&quot;&gt;
+      &lt;button type=&quot;button&quot; class=&quot;quantity__button&quot; aria-label=&quot;Decrease quantity&quot;&gt;&lt;svg class=&quot;icon&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.5&quot; stroke-linecap=&quot;square&quot; aria-hidden=&quot;true&quot; focusable=&quot;false&quot;&gt;&lt;path d=&quot;M5 12h14&quot;/&gt;&lt;/svg&gt;&lt;/button&gt;
+      &lt;input class=&quot;quantity__input mono&quot; type=&quot;number&quot; value=&quot;1&quot; aria-label=&quot;Quantity&quot;&gt;
+      &lt;button type=&quot;button&quot; class=&quot;quantity__button&quot; aria-label=&quot;Increase quantity&quot;&gt;&lt;svg class=&quot;icon&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.5&quot; stroke-linecap=&quot;square&quot; aria-hidden=&quot;true&quot; focusable=&quot;false&quot;&gt;&lt;path d=&quot;M12 5v14M5 12h14&quot;/&gt;&lt;/svg&gt;&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;span class=&quot;button button--large product-form__submit&quot;&gt;Add to cart&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;product-form__dynamic&quot;&gt;&lt;div class=&quot;shopify-payment-button&quot;&gt;&lt;span class=&quot;shopify-payment-button__button shopify-payment-button__button--unbranded&quot;&gt;Buy it now&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/body&gt;&lt;/html&gt;"></iframe>
+      <h3>Style settings</h3>
+      <p>Found in <strong>Theme settings &gt; Style</strong> and <strong>Typography</strong>.</p>
+      <div class="table-wrap"><table><thead><tr><th>Setting</th><th>Hi-vis</th></tr></thead><tbody><tr><td>Heading case</td><td>Uppercase</td></tr><tr><td>Heading size</td><td>100%</td></tr><tr><td>Labels and buttons</td><td>Technical font</td></tr><tr><td>Logo position</td><td>Center</td></tr><tr><td>Menu style</td><td>Text links</td></tr><tr><td>Show text logo in a box</td><td>Off</td></tr><tr><td>Homepage hero layout</td><td>Photo and color panel</td></tr><tr><td>Button corner radius</td><td>Fully rounded</td></tr><tr><td>Image corner radius</td><td>0px</td></tr><tr><td>Outline panels and cards</td><td>On</td></tr><tr><td>Filter style</td><td>Checklist</td></tr><tr><td>Fill table headers with the accent color</td><td>On</td></tr><tr><td>Stock marker</td><td>Badge</td></tr><tr><td>Page title background</td><td>None</td></tr><tr><td>Datasheet layout</td><td>Cards</td></tr><tr><td>Page width</td><td>Standard</td></tr><tr><td>Page margin</td><td>30px</td></tr></tbody></table></div>
+    </section>
+    <section class="doc" id="field">
+      <p class="label">Preset</p>
+      <h2>Field</h2>
+      <p>Dark green with a lime accent, tall headings, contour line patterns.</p>
+      <h3>Fonts</h3>
+      <div class="table-wrap"><table><thead><tr><th>Role</th><th>Font</th><th>Used for</th></tr></thead><tbody><tr><td>Headings</td><td>Bebas Neue, 400</td><td>Page titles, section headings, large prices</td></tr><tr><td>Body</td><td>Space Mono, 400</td><td>Paragraphs, descriptions, policies</td></tr><tr><td>Technical text</td><td>Space Mono, 400</td><td>Part numbers, prices, specs, stock</td></tr><tr><td>Labels and buttons</td><td>Same as technical text</td><td>Eyebrows, buttons, table headers</td></tr></tbody></table></div>
+      <h3>Color schemes and components</h3>
+      <p>Rendered with the theme's own stylesheets. Each scheme lists its colors and the contrast of each text pairing; body text needs 4.5:1.</p>
+      <iframe class="sg-frame" title="Field preset: type, color schemes and components" loading="lazy" srcdoc="&lt;!doctype html&gt;
+&lt;html lang=&quot;en&quot;&gt;&lt;head&gt;&lt;meta charset=&quot;utf-8&quot;&gt;&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+&lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.googleapis.com&quot;&gt;&lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.gstatic.com&quot; crossorigin&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=Space+Mono:wght@400;700&amp;display=swap&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;theme/critical.css&quot;&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;theme/base.css&quot;&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;theme/section-product.css&quot;&gt;
+&lt;style&gt;
+:root {
+  --font-heading-family: &#x27;Bebas Neue&#x27;, sans-serif; --font-heading-weight: 400; --font-heading-style: normal;
+  --heading-case: uppercase; --heading-scale: 1.15;
+  --font-body-family: &#x27;Space Mono&#x27;, monospace; --font-body-weight: 400; --font-body-weight-bold: 700; --font-body-style: normal;
+  --font-mono-family: &#x27;Space Mono&#x27;, monospace; --font-mono-weight: 400; --font-mono-weight-bold: 700;
+  --font-label-family: &#x27;Space Mono&#x27;, monospace; --font-label-weight: 400; --label-size: 0.6875rem; --label-tracking: 0.08em;
+  --page-width: 1440px; --page-margin: 48px; --page-margin-phone: min(48px, 20px);
+  --radius-button: 999px; --radius-image: 0px;
+  --panel-border-width: 0px;
+}
+:root, .color-scheme-1 { --color-background: #161B13; --gradient-background: #161B13; --color-text: #DDE2E4; --color-muted: #9AA595; --color-rule: #2D3329; --color-panel: #2D3329; --color-specimen: #232920; --color-button: #E2FFCC; --color-button-label: #000000; --color-secondary-button: #161B13; --color-secondary-button-label: #DDE2E4; --color-accent: #E2FFCC; --color-accent-label: #000000; }
+.color-scheme-2 { --color-background: #161B13; --gradient-background: #161B13; --color-text: #DDE2E4; --color-muted: #9AA595; --color-rule: #2D3329; --color-panel: #2D3329; --color-specimen: #232920; --color-button: #E2FFCC; --color-button-label: #000000; --color-secondary-button: #161B13; --color-secondary-button-label: #DDE2E4; --color-accent: #E2FFCC; --color-accent-label: #000000; }
+.color-scheme-3 { --color-background: #2D3329; --gradient-background: #2D3329; --color-text: #DDE2E4; --color-muted: #9AA595; --color-rule: #3C4437; --color-panel: #232920; --color-specimen: #232920; --color-button: #E2FFCC; --color-button-label: #000000; --color-secondary-button: #2D3329; --color-secondary-button-label: #DDE2E4; --color-accent: #E2FFCC; --color-accent-label: #000000; }
+.color-scheme-4 { --color-background: #E2FFCC; --gradient-background: #E2FFCC; --color-text: #000000; --color-muted: #2D3329; --color-rule: #000000; --color-panel: #D3F2BC; --color-specimen: #FFFFFF; --color-button: #000000; --color-button-label: #E2FFCC; --color-secondary-button: #E2FFCC; --color-secondary-button-label: #000000; --color-accent: #000000; --color-accent-label: #E2FFCC; }
+html, body { min-height: 0; }
+body { display: block; background: var(--color-background); padding: 24px; }
+.sg-type { display: grid; gap: 14px; padding-bottom: 28px; }
+.sg-type__meta { display: flex; flex-wrap: wrap; gap: 8px 20px; }
+.sg-schemes { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 12px; }
+.sg-scheme { display: grid; align-content: start; gap: 14px; padding: 20px; border-radius: max(var(--radius-image), 4px);
+  background: var(--color-background); color: var(--color-text); border: 1px solid var(--color-rule); }
+.sg-scheme__head { display: grid; gap: 2px; }
+.sg-small { font-size: 0.8125rem; }
+.sg-row { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; }
+.sg-row--fields { display: grid; grid-template-columns: minmax(0, 3fr) minmax(0, 2fr); }
+.sg-panel { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; padding: 12px 14px;
+  background: var(--color-panel); border: var(--panel-border-width) solid var(--color-rule); border-radius: max(var(--radius-image), 4px); }
+.sg-swatches, .sg-checks { display: grid; gap: 6px; margin: 0; padding: 0; list-style: none; font-size: 0.8125rem; }
+.sg-swatches li, .sg-checks li { display: grid; grid-template-columns: 22px minmax(0, 1fr) auto; align-items: center; gap: 10px; }
+.sg-checks li { grid-template-columns: minmax(0, 1fr) auto 5.5rem; padding-top: 6px; border-top: 1px solid var(--color-rule); }
+.sg-swatch { width: 22px; height: 22px; border-radius: 50%; box-shadow: inset 0 0 0 1px var(--color-rule); }
+.sg-swatches code, .sg-checks code { font-family: var(--font-mono-family); }
+.sg-verdict { text-align: end; font-family: var(--font-label-family); font-size: var(--label-size); letter-spacing: var(--label-tracking); text-transform: uppercase; }
+.sg-buy { display: grid; gap: 0; max-width: 26rem; padding-top: 28px; }
+.sg-buy .product-form__row { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.sg-buy .product-form__submit { flex: 1 1 8rem; }
+.sg-buy .quantity__button { color: inherit; }
+&lt;/style&gt;&lt;/head&gt;
+&lt;body class=&quot;color-scheme-1&quot; data-menu=&quot;text&quot; data-filters=&quot;list&quot; data-stock=&quot;glyph&quot; data-table-head=&quot;plain&quot;&gt;
+&lt;div class=&quot;sg-type&quot;&gt;
+  &lt;p class=&quot;label&quot;&gt;Irrigation, fencing and machine parts&lt;/p&gt;
+  &lt;p class=&quot;h0&quot;&gt;Built for the field.&lt;/p&gt;
+  &lt;p class=&quot;h2&quot;&gt;Picked by growers and contractors&lt;/p&gt;
+  &lt;p class=&quot;h4&quot;&gt;Chain by pitch, gauge and links&lt;/p&gt;
+  &lt;p style=&quot;max-width:60ch&quot;&gt;Fittings by pipe size, chain by pitch and links, blades by length. Order before 1pm, out the same day.&lt;/p&gt;
+  &lt;div class=&quot;sg-type__meta&quot;&gt;&lt;span class=&quot;part-number&quot;&gt;KC-CD18&lt;/span&gt;&lt;span class=&quot;price&quot;&gt;$129.00&lt;/span&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sg-schemes&quot;&gt;
+&lt;section class=&quot;sg-scheme color-scheme-1&quot; aria-labelledby=&quot;scheme-1-title&quot;&gt;
+  &lt;header class=&quot;sg-scheme__head&quot;&gt;
+    &lt;p class=&quot;label&quot; id=&quot;scheme-1-title&quot;&gt;Scheme 1&lt;/p&gt;
+    &lt;p class=&quot;muted sg-small&quot;&gt;Pages and most sections&lt;/p&gt;
+  &lt;/header&gt;
+  &lt;p class=&quot;h3&quot;&gt;Built for the field.&lt;/p&gt;
+  &lt;p&gt;Body text sits on the background in the text color. &lt;span class=&quot;muted&quot;&gt;Secondary text carries supporting detail.&lt;/span&gt;&lt;/p&gt;
+  &lt;div class=&quot;sg-row&quot;&gt;
+    &lt;span class=&quot;button&quot;&gt;Add to cart&lt;/span&gt;
+    &lt;span class=&quot;button button--secondary&quot;&gt;View details&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;sg-row&quot;&gt;
+    &lt;span class=&quot;chip&quot;&gt;In compare&lt;/span&gt;
+    &lt;span class=&quot;stock stock--in mono&quot;&gt;240 in stock&lt;/span&gt;
+    &lt;span class=&quot;stock stock--low mono&quot;&gt;Low stock: 4 left&lt;/span&gt;
+    &lt;span class=&quot;stock stock--out mono&quot;&gt;Out of stock&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;sg-row sg-row--fields&quot;&gt;
+    &lt;input class=&quot;input&quot; type=&quot;text&quot; placeholder=&quot;Search part number&quot; aria-label=&quot;Search part number (scheme-1)&quot;&gt;
+    &lt;select class=&quot;select&quot; aria-label=&quot;Sort (scheme-1)&quot;&gt;&lt;option&gt;Best selling&lt;/option&gt;&lt;/select&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;sg-panel&quot;&gt;
+    &lt;span class=&quot;part-number sg-small&quot;&gt;KC-CD18&lt;/span&gt;
+    &lt;div class=&quot;price price--sale&quot;&gt;&lt;span class=&quot;price__current&quot;&gt;$129.00&lt;/span&gt;&lt;s class=&quot;price__compare&quot;&gt;$159.00&lt;/s&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;ul class=&quot;sg-swatches&quot; role=&quot;list&quot;&gt;&lt;li&gt;&lt;span class=&quot;sg-swatch&quot; style=&quot;background:#161B13&quot;&gt;&lt;/span&gt;&lt;span&gt;Background&lt;/span&gt;&lt;code&gt;#161B13&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;sg-swatch&quot; style=&quot;background:#DDE2E4&quot;&gt;&lt;/span&gt;&lt;span&gt;Text&lt;/span&gt;&lt;code&gt;#DDE2E4&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;sg-swatch&quot; style=&quot;background:#9AA595&quot;&gt;&lt;/span&gt;&lt;span&gt;Secondary text&lt;/span&gt;&lt;code&gt;#9AA595&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;sg-swatch&quot; style=&quot;background:#2D3329&quot;&gt;&lt;/span&gt;&lt;span&gt;Lines&lt;/span&gt;&lt;code&gt;#2D3329&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;sg-swatch&quot; style=&quot;background:#2D3329&quot;&gt;&lt;/span&gt;&lt;span&gt;Panels&lt;/span&gt;&lt;code&gt;#2D3329&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;sg-swatch&quot; style=&quot;background:#232920&quot;&gt;&lt;/span&gt;&lt;span&gt;Product image&lt;/span&gt;&lt;code&gt;#232920&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;sg-swatch&quot; style=&quot;background:#E2FFCC&quot;&gt;&lt;/span&gt;&lt;span&gt;Primary button&lt;/span&gt;&lt;code&gt;#E2FFCC&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;sg-swatch&quot; style=&quot;background:#161B13&quot;&gt;&lt;/span&gt;&lt;span&gt;Secondary button&lt;/span&gt;&lt;code&gt;#161B13&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;sg-swatch&quot; style=&quot;background:#E2FFCC&quot;&gt;&lt;/span&gt;&lt;span&gt;Accent&lt;/span&gt;&lt;code&gt;#E2FFCC&lt;/code&gt;&lt;/li&gt;&lt;/ul&gt;
+  &lt;ul class=&quot;sg-checks&quot; role=&quot;list&quot; aria-label=&quot;Contrast, 4.5:1 needed for text&quot;&gt;&lt;li&gt;&lt;span&gt;Text&lt;/span&gt;&lt;code&gt;13.4:1&lt;/code&gt;&lt;span class=&quot;sg-verdict&quot;&gt;Pass&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;Secondary text&lt;/span&gt;&lt;code&gt;6.8:1&lt;/code&gt;&lt;span class=&quot;sg-verdict&quot;&gt;Pass&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;Text on panels&lt;/span&gt;&lt;code&gt;9.9:1&lt;/code&gt;&lt;span class=&quot;sg-verdict&quot;&gt;Pass&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;Primary button&lt;/span&gt;&lt;code&gt;19.4:1&lt;/code&gt;&lt;span class=&quot;sg-verdict&quot;&gt;Pass&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;Secondary button&lt;/span&gt;&lt;code&gt;13.4:1&lt;/code&gt;&lt;span class=&quot;sg-verdict&quot;&gt;Pass&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;Accent&lt;/span&gt;&lt;code&gt;19.4:1&lt;/code&gt;&lt;span class=&quot;sg-verdict&quot;&gt;Pass&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;/section&gt;
+&lt;section class=&quot;sg-scheme color-scheme-2&quot; aria-labelledby=&quot;scheme-2-title&quot;&gt;
+  &lt;header class=&quot;sg-scheme__head&quot;&gt;
+    &lt;p class=&quot;label&quot; id=&quot;scheme-2-title&quot;&gt;Scheme 2&lt;/p&gt;
+    &lt;p class=&quot;muted sg-small&quot;&gt;Header, footer and announcement bar&lt;/p&gt;
+  &lt;/header&gt;
+  &lt;p class=&quot;h3&quot;&gt;Built for the field.&lt;/p&gt;
+  &lt;p&gt;Body text sits on the background in the text color. &lt;span class=&quot;muted&quot;&gt;Secondary text carries supporting detail.&lt;/span&gt;&lt;/p&gt;
+  &lt;div class=&quot;sg-row&quot;&gt;
+    &lt;span class=&quot;button&quot;&gt;Add to cart&lt;/span&gt;
+    &lt;span class=&quot;button button--secondary&quot;&gt;View details&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;sg-row&quot;&gt;
+    &lt;span class=&quot;chip&quot;&gt;In compare&lt;/span&gt;
+    &lt;span class=&quot;stock stock--in mono&quot;&gt;240 in stock&lt;/span&gt;
+    &lt;span class=&quot;stock stock--low mono&quot;&gt;Low stock: 4 left&lt;/span&gt;
+    &lt;span class=&quot;stock stock--out mono&quot;&gt;Out of stock&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;sg-row sg-row--fields&quot;&gt;
+    &lt;input class=&quot;input&quot; type=&quot;text&quot; placeholder=&quot;Search part number&quot; aria-label=&quot;Search part number (scheme-2)&quot;&gt;
+    &lt;select class=&quot;select&quot; aria-label=&quot;Sort (scheme-2)&quot;&gt;&lt;option&gt;Best selling&lt;/option&gt;&lt;/select&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;sg-panel&quot;&gt;
+    &lt;span class=&quot;part-number sg-small&quot;&gt;KC-CD18&lt;/span&gt;
+    &lt;div class=&quot;price price--sale&quot;&gt;&lt;span class=&quot;price__current&quot;&gt;$129.00&lt;/span&gt;&lt;s class=&quot;price__compare&quot;&gt;$159.00&lt;/s&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;ul class=&quot;sg-swatches&quot; role=&quot;list&quot;&gt;&lt;li&gt;&lt;span class=&quot;sg-swatch&quot; style=&quot;background:#161B13&quot;&gt;&lt;/span&gt;&lt;span&gt;Background&lt;/span&gt;&lt;code&gt;#161B13&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;sg-swatch&quot; style=&quot;background:#DDE2E4&quot;&gt;&lt;/span&gt;&lt;span&gt;Text&lt;/span&gt;&lt;code&gt;#DDE2E4&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;sg-swatch&quot; style=&quot;background:#9AA595&quot;&gt;&lt;/span&gt;&lt;span&gt;Secondary text&lt;/span&gt;&lt;code&gt;#9AA595&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;sg-swatch&quot; style=&quot;background:#2D3329&quot;&gt;&lt;/span&gt;&lt;span&gt;Lines&lt;/span&gt;&lt;code&gt;#2D3329&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;sg-swatch&quot; style=&quot;background:#2D3329&quot;&gt;&lt;/span&gt;&lt;span&gt;Panels&lt;/span&gt;&lt;code&gt;#2D3329&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;sg-swatch&quot; style=&quot;background:#232920&quot;&gt;&lt;/span&gt;&lt;span&gt;Product image&lt;/span&gt;&lt;code&gt;#232920&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;sg-swatch&quot; style=&quot;background:#E2FFCC&quot;&gt;&lt;/span&gt;&lt;span&gt;Primary button&lt;/span&gt;&lt;code&gt;#E2FFCC&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;sg-swatch&quot; style=&quot;background:#161B13&quot;&gt;&lt;/span&gt;&lt;span&gt;Secondary button&lt;/span&gt;&lt;code&gt;#161B13&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;sg-swatch&quot; style=&quot;background:#E2FFCC&quot;&gt;&lt;/span&gt;&lt;span&gt;Accent&lt;/span&gt;&lt;code&gt;#E2FFCC&lt;/code&gt;&lt;/li&gt;&lt;/ul&gt;
+  &lt;ul class=&quot;sg-checks&quot; role=&quot;list&quot; aria-label=&quot;Contrast, 4.5:1 needed for text&quot;&gt;&lt;li&gt;&lt;span&gt;Text&lt;/span&gt;&lt;code&gt;13.4:1&lt;/code&gt;&lt;span class=&quot;sg-verdict&quot;&gt;Pass&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;Secondary text&lt;/span&gt;&lt;code&gt;6.8:1&lt;/code&gt;&lt;span class=&quot;sg-verdict&quot;&gt;Pass&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;Text on panels&lt;/span&gt;&lt;code&gt;9.9:1&lt;/code&gt;&lt;span class=&quot;sg-verdict&quot;&gt;Pass&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;Primary button&lt;/span&gt;&lt;code&gt;19.4:1&lt;/code&gt;&lt;span class=&quot;sg-verdict&quot;&gt;Pass&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;Secondary button&lt;/span&gt;&lt;code&gt;13.4:1&lt;/code&gt;&lt;span class=&quot;sg-verdict&quot;&gt;Pass&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;Accent&lt;/span&gt;&lt;code&gt;19.4:1&lt;/code&gt;&lt;span class=&quot;sg-verdict&quot;&gt;Pass&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;/section&gt;
+&lt;section class=&quot;sg-scheme color-scheme-3&quot; aria-labelledby=&quot;scheme-3-title&quot;&gt;
+  &lt;header class=&quot;sg-scheme__head&quot;&gt;
+    &lt;p class=&quot;label&quot; id=&quot;scheme-3-title&quot;&gt;Scheme 3&lt;/p&gt;
+    &lt;p class=&quot;muted sg-small&quot;&gt;Spare: use it on any section you want to set apart&lt;/p&gt;
+  &lt;/header&gt;
+  &lt;p class=&quot;h3&quot;&gt;Built for the field.&lt;/p&gt;
+  &lt;p&gt;Body text sits on the background in the text color. &lt;span class=&quot;muted&quot;&gt;Secondary text carries supporting detail.&lt;/span&gt;&lt;/p&gt;
+  &lt;div class=&quot;sg-row&quot;&gt;
+    &lt;span class=&quot;button&quot;&gt;Add to cart&lt;/span&gt;
+    &lt;span class=&quot;button button--secondary&quot;&gt;View details&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;sg-row&quot;&gt;
+    &lt;span class=&quot;chip&quot;&gt;In compare&lt;/span&gt;
+    &lt;span class=&quot;stock stock--in mono&quot;&gt;240 in stock&lt;/span&gt;
+    &lt;span class=&quot;stock stock--low mono&quot;&gt;Low stock: 4 left&lt;/span&gt;
+    &lt;span class=&quot;stock stock--out mono&quot;&gt;Out of stock&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;sg-row sg-row--fields&quot;&gt;
+    &lt;input class=&quot;input&quot; type=&quot;text&quot; placeholder=&quot;Search part number&quot; aria-label=&quot;Search part number (scheme-3)&quot;&gt;
+    &lt;select class=&quot;select&quot; aria-label=&quot;Sort (scheme-3)&quot;&gt;&lt;option&gt;Best selling&lt;/option&gt;&lt;/select&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;sg-panel&quot;&gt;
+    &lt;span class=&quot;part-number sg-small&quot;&gt;KC-CD18&lt;/span&gt;
+    &lt;div class=&quot;price price--sale&quot;&gt;&lt;span class=&quot;price__current&quot;&gt;$129.00&lt;/span&gt;&lt;s class=&quot;price__compare&quot;&gt;$159.00&lt;/s&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;ul class=&quot;sg-swatches&quot; role=&quot;list&quot;&gt;&lt;li&gt;&lt;span class=&quot;sg-swatch&quot; style=&quot;background:#2D3329&quot;&gt;&lt;/span&gt;&lt;span&gt;Background&lt;/span&gt;&lt;code&gt;#2D3329&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;sg-swatch&quot; style=&quot;background:#DDE2E4&quot;&gt;&lt;/span&gt;&lt;span&gt;Text&lt;/span&gt;&lt;code&gt;#DDE2E4&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;sg-swatch&quot; style=&quot;background:#9AA595&quot;&gt;&lt;/span&gt;&lt;span&gt;Secondary text&lt;/span&gt;&lt;code&gt;#9AA595&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;sg-swatch&quot; style=&quot;background:#3C4437&quot;&gt;&lt;/span&gt;&lt;span&gt;Lines&lt;/span&gt;&lt;code&gt;#3C4437&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;sg-swatch&quot; style=&quot;background:#232920&quot;&gt;&lt;/span&gt;&lt;span&gt;Panels&lt;/span&gt;&lt;code&gt;#232920&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;sg-swatch&quot; style=&quot;background:#232920&quot;&gt;&lt;/span&gt;&lt;span&gt;Product image&lt;/span&gt;&lt;code&gt;#232920&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;sg-swatch&quot; style=&quot;background:#E2FFCC&quot;&gt;&lt;/span&gt;&lt;span&gt;Primary button&lt;/span&gt;&lt;code&gt;#E2FFCC&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;sg-swatch&quot; style=&quot;background:#2D3329&quot;&gt;&lt;/span&gt;&lt;span&gt;Secondary button&lt;/span&gt;&lt;code&gt;#2D3329&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;sg-swatch&quot; style=&quot;background:#E2FFCC&quot;&gt;&lt;/span&gt;&lt;span&gt;Accent&lt;/span&gt;&lt;code&gt;#E2FFCC&lt;/code&gt;&lt;/li&gt;&lt;/ul&gt;
+  &lt;ul class=&quot;sg-checks&quot; role=&quot;list&quot; aria-label=&quot;Contrast, 4.5:1 needed for text&quot;&gt;&lt;li&gt;&lt;span&gt;Text&lt;/span&gt;&lt;code&gt;9.9:1&lt;/code&gt;&lt;span class=&quot;sg-verdict&quot;&gt;Pass&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;Secondary text&lt;/span&gt;&lt;code&gt;5.1:1&lt;/code&gt;&lt;span class=&quot;sg-verdict&quot;&gt;Pass&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;Text on panels&lt;/span&gt;&lt;code&gt;11.4:1&lt;/code&gt;&lt;span class=&quot;sg-verdict&quot;&gt;Pass&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;Primary button&lt;/span&gt;&lt;code&gt;19.4:1&lt;/code&gt;&lt;span class=&quot;sg-verdict&quot;&gt;Pass&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;Secondary button&lt;/span&gt;&lt;code&gt;9.9:1&lt;/code&gt;&lt;span class=&quot;sg-verdict&quot;&gt;Pass&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;Accent&lt;/span&gt;&lt;code&gt;19.4:1&lt;/code&gt;&lt;span class=&quot;sg-verdict&quot;&gt;Pass&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;/section&gt;
+&lt;section class=&quot;sg-scheme color-scheme-4&quot; aria-labelledby=&quot;scheme-4-title&quot;&gt;
+  &lt;header class=&quot;sg-scheme__head&quot;&gt;
+    &lt;p class=&quot;label&quot; id=&quot;scheme-4-title&quot;&gt;Scheme 4&lt;/p&gt;
+    &lt;p class=&quot;muted sg-small&quot;&gt;Stat bar and newsletter&lt;/p&gt;
+  &lt;/header&gt;
+  &lt;p class=&quot;h3&quot;&gt;Built for the field.&lt;/p&gt;
+  &lt;p&gt;Body text sits on the background in the text color. &lt;span class=&quot;muted&quot;&gt;Secondary text carries supporting detail.&lt;/span&gt;&lt;/p&gt;
+  &lt;div class=&quot;sg-row&quot;&gt;
+    &lt;span class=&quot;button&quot;&gt;Add to cart&lt;/span&gt;
+    &lt;span class=&quot;button button--secondary&quot;&gt;View details&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;sg-row&quot;&gt;
+    &lt;span class=&quot;chip&quot;&gt;In compare&lt;/span&gt;
+    &lt;span class=&quot;stock stock--in mono&quot;&gt;240 in stock&lt;/span&gt;
+    &lt;span class=&quot;stock stock--low mono&quot;&gt;Low stock: 4 left&lt;/span&gt;
+    &lt;span class=&quot;stock stock--out mono&quot;&gt;Out of stock&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;sg-row sg-row--fields&quot;&gt;
+    &lt;input class=&quot;input&quot; type=&quot;text&quot; placeholder=&quot;Search part number&quot; aria-label=&quot;Search part number (scheme-4)&quot;&gt;
+    &lt;select class=&quot;select&quot; aria-label=&quot;Sort (scheme-4)&quot;&gt;&lt;option&gt;Best selling&lt;/option&gt;&lt;/select&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;sg-panel&quot;&gt;
+    &lt;span class=&quot;part-number sg-small&quot;&gt;KC-CD18&lt;/span&gt;
+    &lt;div class=&quot;price price--sale&quot;&gt;&lt;span class=&quot;price__current&quot;&gt;$129.00&lt;/span&gt;&lt;s class=&quot;price__compare&quot;&gt;$159.00&lt;/s&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;ul class=&quot;sg-swatches&quot; role=&quot;list&quot;&gt;&lt;li&gt;&lt;span class=&quot;sg-swatch&quot; style=&quot;background:#E2FFCC&quot;&gt;&lt;/span&gt;&lt;span&gt;Background&lt;/span&gt;&lt;code&gt;#E2FFCC&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;sg-swatch&quot; style=&quot;background:#000000&quot;&gt;&lt;/span&gt;&lt;span&gt;Text&lt;/span&gt;&lt;code&gt;#000000&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;sg-swatch&quot; style=&quot;background:#2D3329&quot;&gt;&lt;/span&gt;&lt;span&gt;Secondary text&lt;/span&gt;&lt;code&gt;#2D3329&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;sg-swatch&quot; style=&quot;background:#000000&quot;&gt;&lt;/span&gt;&lt;span&gt;Lines&lt;/span&gt;&lt;code&gt;#000000&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;sg-swatch&quot; style=&quot;background:#D3F2BC&quot;&gt;&lt;/span&gt;&lt;span&gt;Panels&lt;/span&gt;&lt;code&gt;#D3F2BC&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;sg-swatch&quot; style=&quot;background:#FFFFFF&quot;&gt;&lt;/span&gt;&lt;span&gt;Product image&lt;/span&gt;&lt;code&gt;#FFFFFF&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;sg-swatch&quot; style=&quot;background:#000000&quot;&gt;&lt;/span&gt;&lt;span&gt;Primary button&lt;/span&gt;&lt;code&gt;#000000&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;sg-swatch&quot; style=&quot;background:#E2FFCC&quot;&gt;&lt;/span&gt;&lt;span&gt;Secondary button&lt;/span&gt;&lt;code&gt;#E2FFCC&lt;/code&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;sg-swatch&quot; style=&quot;background:#000000&quot;&gt;&lt;/span&gt;&lt;span&gt;Accent&lt;/span&gt;&lt;code&gt;#000000&lt;/code&gt;&lt;/li&gt;&lt;/ul&gt;
+  &lt;ul class=&quot;sg-checks&quot; role=&quot;list&quot; aria-label=&quot;Contrast, 4.5:1 needed for text&quot;&gt;&lt;li&gt;&lt;span&gt;Text&lt;/span&gt;&lt;code&gt;19.4:1&lt;/code&gt;&lt;span class=&quot;sg-verdict&quot;&gt;Pass&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;Secondary text&lt;/span&gt;&lt;code&gt;12.0:1&lt;/code&gt;&lt;span class=&quot;sg-verdict&quot;&gt;Pass&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;Text on panels&lt;/span&gt;&lt;code&gt;17.2:1&lt;/code&gt;&lt;span class=&quot;sg-verdict&quot;&gt;Pass&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;Primary button&lt;/span&gt;&lt;code&gt;19.4:1&lt;/code&gt;&lt;span class=&quot;sg-verdict&quot;&gt;Pass&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;Secondary button&lt;/span&gt;&lt;code&gt;19.4:1&lt;/code&gt;&lt;span class=&quot;sg-verdict&quot;&gt;Pass&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;Accent&lt;/span&gt;&lt;code&gt;19.4:1&lt;/code&gt;&lt;span class=&quot;sg-verdict&quot;&gt;Pass&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;/section&gt;&lt;/div&gt;
+&lt;div class=&quot;sg-buy&quot;&gt;
+  &lt;p class=&quot;label&quot;&gt;Buy area, scheme 1&lt;/p&gt;
+  &lt;div class=&quot;product-form__row&quot; style=&quot;margin-top:10px&quot;&gt;
+    &lt;div class=&quot;quantity&quot;&gt;
+      &lt;button type=&quot;button&quot; class=&quot;quantity__button&quot; aria-label=&quot;Decrease quantity&quot;&gt;&lt;svg class=&quot;icon&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.5&quot; stroke-linecap=&quot;square&quot; aria-hidden=&quot;true&quot; focusable=&quot;false&quot;&gt;&lt;path d=&quot;M5 12h14&quot;/&gt;&lt;/svg&gt;&lt;/button&gt;
+      &lt;input class=&quot;quantity__input mono&quot; type=&quot;number&quot; value=&quot;1&quot; aria-label=&quot;Quantity&quot;&gt;
+      &lt;button type=&quot;button&quot; class=&quot;quantity__button&quot; aria-label=&quot;Increase quantity&quot;&gt;&lt;svg class=&quot;icon&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.5&quot; stroke-linecap=&quot;square&quot; aria-hidden=&quot;true&quot; focusable=&quot;false&quot;&gt;&lt;path d=&quot;M12 5v14M5 12h14&quot;/&gt;&lt;/svg&gt;&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;span class=&quot;button button--large product-form__submit&quot;&gt;Add to cart&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;product-form__dynamic&quot;&gt;&lt;div class=&quot;shopify-payment-button&quot;&gt;&lt;span class=&quot;shopify-payment-button__button shopify-payment-button__button--unbranded&quot;&gt;Buy it now&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/body&gt;&lt;/html&gt;"></iframe>
+      <h3>Style settings</h3>
+      <p>Found in <strong>Theme settings &gt; Style</strong> and <strong>Typography</strong>.</p>
+      <div class="table-wrap"><table><thead><tr><th>Setting</th><th>Field</th></tr></thead><tbody><tr><td>Heading case</td><td>Uppercase</td></tr><tr><td>Heading size</td><td>115%</td></tr><tr><td>Labels and buttons</td><td>Technical font</td></tr><tr><td>Logo position</td><td>Left</td></tr><tr><td>Menu style</td><td>Text links</td></tr><tr><td>Show text logo in a box</td><td>Off</td></tr><tr><td>Homepage hero layout</td><td>Contour pattern with headline</td></tr><tr><td>Button corner radius</td><td>Fully rounded</td></tr><tr><td>Image corner radius</td><td>0px</td></tr><tr><td>Outline panels and cards</td><td>Off</td></tr><tr><td>Filter style</td><td>Checklist</td></tr><tr><td>Fill table headers with the accent color</td><td>Off</td></tr><tr><td>Stock marker</td><td>Triangle</td></tr><tr><td>Page title background</td><td>Contour lines</td></tr><tr><td>Datasheet layout</td><td>Cards</td></tr><tr><td>Page width</td><td>Wide</td></tr><tr><td>Page margin</td><td>48px</td></tr></tbody></table></div>
+    </section>
+
+    <section class="doc" id="spacing">
+      <h2>Spacing</h2>
+      <p>Every section uses one spacing scale. Set a section's top and bottom padding in its settings; the theme scales it down on smaller screens so pages keep the same rhythm.</p>
+      <div class="table-wrap"><table>
+        <thead><tr><th>Screen</th><th>Section padding</th><th>Heading to content</th><th>Gap between panels</th></tr></thead>
+        <tbody>
+          <tr><td>Desktop, 990px and wider</td><td>100% of the setting</td><td>32px</td><td>12px</td></tr>
+          <tr><td>Tablet, 600 to 989px</td><td>80%</td><td>24px</td><td>12px</td></tr>
+          <tr><td>Phone, under 600px</td><td>60%</td><td>20px</td><td>10px</td></tr>
+        </tbody>
+      </table></div>
+      <p>Page margins follow <strong>Theme settings &gt; Layout &gt; Page margin</strong> and are capped at 20px on phones.</p>
+    </section>
+  </main>
+</div>
+<footer>Caliper is a Shopify theme. Shopify is a trademark of Shopify Inc.</footer>
+<script>
+  // Size each preset frame to its content, including after fonts load and on resize
+  document.querySelectorAll('.sg-frame').forEach(function (frame) {
+    function fit() {
+      var doc = frame.contentDocument;
+      if (doc && doc.body) frame.style.height = doc.documentElement.scrollHeight + 'px';
+    }
+    frame.addEventListener('load', function () {
+      fit();
+      new ResizeObserver(fit).observe(frame.contentDocument.body);
+      if (frame.contentDocument.fonts) frame.contentDocument.fonts.ready.then(fit);
+    });
+  });
+</script>
+</body>
+</html>

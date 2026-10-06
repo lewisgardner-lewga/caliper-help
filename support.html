@@ -36,8 +36,8 @@
 
     <section class="doc">
       <!-- Sends to support@lewga.com through FormSubmit (no account; the first submission asks the inbox to confirm). -->
-      <form action="https://formsubmit.co/support@lewga.com" method="POST" data-support-form>
-        <input type="hidden" name="_subject" value="Caliper support request">
+      <form action="https://formsubmit.co/support@lewga.com" method="POST" enctype="multipart/form-data" data-support-form>
+        <input type="hidden" name="_subject" value="Caliper support request" data-subject>
         <input type="hidden" name="_template" value="table">
         <input type="hidden" name="_next" value="https://lewisgardner-lewga.github.io/caliper-help/thanks.html">
         <input type="hidden" name="_replyto" value="" data-reply-to>
@@ -71,7 +71,12 @@
         <div class="field">
           <label for="problem">Description of the problem</label>
           <textarea id="problem" name="problem" aria-describedby="problem-hint" required></textarea>
-          <span id="problem-hint" class="hint">Include the page where it happens and the steps to see it. Add links to screenshots if you have them.</span>
+          <span id="problem-hint" class="hint">Include the page where it happens and the steps to see it.</span>
+        </div>
+        <div class="field">
+          <label for="attachment">Screenshot (optional)</label>
+          <input id="attachment" name="attachment" type="file" accept="image/png, image/jpeg, image/webp, application/pdf" aria-describedby="attachment-hint">
+          <span id="attachment-hint" class="hint">PNG, JPG, WebP or PDF, up to 10MB.</span>
         </div>
         <button class="pill pill--solid" type="submit">Send request</button>
       </form>
@@ -80,9 +85,11 @@
 </div>
 <footer>Caliper is a Shopify theme. Shopify is a trademark of Shopify Inc.</footer>
 <script>
-  // Replies go straight back to the merchant: copy their email into FormSubmit's reply-to field
+  // Replies go straight back to the merchant, and their subject becomes the email subject
   document.querySelector('[data-support-form]').addEventListener('submit', function () {
+    var subject = document.getElementById('subject').value.trim();
     document.querySelector('[data-reply-to]').value = document.getElementById('email').value;
+    document.querySelector('[data-subject]').value = subject ? 'Caliper support: ' + subject : 'Caliper support request';
   });
 </script>
 </body>
