@@ -64,4 +64,5 @@ footer { max-width: 1180px; margin: 0 auto; padding: 0 max(16px, 4vw) 48px; colo
 @media (max-width: 860px) {
   .layout { grid-template-columns: minmax(0, 1fr); gap: 24px; }
   .toc { position: static; grid-template-columns: repeat(2, minmax(0, 1fr)); background: var(--panel); border-radius: 12px; padding: 16px; }
+  .toc .label { grid-column: 1 / -1; margin-bottom: 4px; }
 }
