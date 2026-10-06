@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Caliper theme support</title>
+<meta name="description" content="Ask a question or report a problem with the Caliper Shopify theme. We reply within two business days.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Inter:wght@400;600&family=Geist+Mono&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="top__inner">
+    <a class="brand" href="index.html"><span>Caliper</span> Help</a>
+    <a class="pill" href="index.html">Documentation</a>
+  </div>
+</header>
+
+<div class="layout">
+  <nav class="toc" aria-label="Before you write">
+    <span class="label">Before you write</span>
+    <a href="index.html#faq">Common questions</a>
+    <a href="index.html#spec-data">Setting up spec data</a>
+    <a href="index.html#collections">Filters</a>
+    <a href="index.html#support">What support covers</a>
+  </nav>
+
+  <main class="content">
+    <div class="hero">
+      <p class="label">Caliper theme support</p>
+      <h1>Contact support</h1>
+      <p class="lede">Tell us what you are trying to do and what happens instead. We reply within two business days.</p>
+    </div>
+
+    <section class="doc">
+      <!-- Sends to support@lewga.com through FormSubmit (no account; the first submission asks the inbox to confirm). -->
+      <form action="https://formsubmit.co/support@lewga.com" method="POST" data-support-form>
+        <input type="hidden" name="_subject" value="Caliper support request">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_next" value="https://lewisgardner-lewga.github.io/caliper-help/thanks.html">
+        <input type="hidden" name="_replyto" value="" data-reply-to>
+        <input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px">
+        <div class="field">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" autocomplete="name" required>
+        </div>
+        <div class="field">
+          <label for="email">Email address</label>
+          <input id="email" name="email" type="email" autocomplete="email" required>
+        </div>
+        <div class="field">
+          <label for="store">Store URL</label>
+          <input id="store" name="store_url" type="text" inputmode="url" placeholder="your-store.myshopify.com" aria-describedby="store-hint" required>
+          <span id="store-hint" class="hint">Your .myshopify.com address, for example your-store.myshopify.com</span>
+        </div>
+        <div class="field">
+          <label for="preset">Theme preset</label>
+          <select id="preset" name="preset">
+            <option>Caliper</option>
+            <option>Hi-vis</option>
+            <option>Field</option>
+            <option>Not sure</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="subject">Subject</label>
+          <input id="subject" name="subject" type="text" placeholder="For example: filters not showing on collection pages">
+        </div>
+        <div class="field">
+          <label for="problem">Description of the problem</label>
+          <textarea id="problem" name="problem" aria-describedby="problem-hint" required></textarea>
+          <span id="problem-hint" class="hint">Include the page where it happens and the steps to see it. Add links to screenshots if you have them.</span>
+        </div>
+        <button class="pill pill--solid" type="submit">Send request</button>
+      </form>
+    </section>
+  </main>
+</div>
+<footer>Caliper is a Shopify theme. Shopify is a trademark of Shopify Inc.</footer>
+<script>
+  // Replies go straight back to the merchant: copy their email into FormSubmit's reply-to field
+  document.querySelector('[data-support-form]').addEventListener('submit', function () {
+    document.querySelector('[data-reply-to]').value = document.getElementById('email').value;
+  });
+</script>
+</body>
+</html>
