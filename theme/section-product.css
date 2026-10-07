@@ -1,4 +1,4 @@
-/* Vernier product page: gallery, buy area and datasheet. Loaded only by the sections that use it; tokens come from snippets/css-variables.liquid. */
+/* Product page: gallery, buy area and datasheet. Loaded only by the sections that use it; tokens come from snippets/css-variables.liquid. */
 
 /* ---------- Product datasheet ---------- */
 
@@ -439,7 +439,7 @@ input:focus-visible + .variant-picker__value {
   text-decoration: none;
 }
 
-/* Datasheet: index layout (Vernier) or cards (Hi Vis, Field) */
+/* Datasheet: index layout or cards, set by the preset */
 
 .datasheet {
   display: grid;
