@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Caliper theme help</title>
-<meta name="description" content="How to set up and use the Caliper Shopify theme: presets, spec data, collections, product pages, compare, order by part number and theme settings.">
+<title>Vernier theme help</title>
+<meta name="description" content="How to set up and use the Vernier Shopify theme: presets, spec data, collections, product pages, compare, order by part number and theme settings.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Inter:wght@400;600&family=Geist+Mono&display=swap">
@@ -13,7 +13,7 @@
 <body>
 <header class="top">
   <div class="top__inner">
-    <a class="brand" href="index.html"><span>Caliper</span> Help</a>
+    <a class="brand" href="index.html"><span>Vernier</span> Help</a>
     <a class="pill pill--solid" href="support.html">Contact support</a>
   </div>
 </header>
@@ -37,19 +37,19 @@
 
   <main class="content">
     <div class="hero">
-      <p class="label">Caliper theme documentation</p>
-      <h1>Caliper help</h1>
-      <p class="lede">Caliper is a Shopify theme for stores that sell by specification: parts, fixings, tools and supplies. Buyers search by part number, filter by size and rating, compare items side by side and order a whole list in one go.</p>
+      <p class="label">Vernier theme documentation</p>
+      <h1>Vernier help</h1>
+      <p class="lede">Vernier is a Shopify theme for stores that sell by specification: parts, fixings, tools and supplies. Buyers search by part number, filter by size and rating, compare items side by side and order a whole list in one go.</p>
     </div>
 
     <section class="doc" id="start">
       <h2>Getting started</h2>
       <ol>
-        <li>Add Caliper from the Shopify Theme Store and choose a preset (Caliper, Hi-vis or Field).</li>
+        <li>Add Vernier from the Shopify Theme Store and choose a preset (Vernier, Hi Vis or Field).</li>
         <li>Before changing code, duplicate the theme in <strong>Online Store &gt; Themes</strong> so you can always go back.</li>
-        <li>Open <strong>Customize</strong>. In <strong>Theme settings &gt; Logo and favicon</strong>, upload your logo and favicon. Without a logo, Caliper shows your store name.</li>
+        <li>Open <strong>Customize</strong>. In <strong>Theme settings &gt; Logo and favicon</strong>, upload your logo and favicon. Without a logo, Vernier shows your store name.</li>
         <li>Set your colors in <strong>Theme settings &gt; Colors</strong> and fonts in <strong>Typography</strong>.</li>
-        <li>Add your product specifications (next sections). This is what makes Caliper's tables, filters and compare work.</li>
+        <li>Add your product specifications (next sections). This is what makes Vernier's tables, filters and compare work.</li>
       </ol>
     </section>
 
@@ -59,8 +59,8 @@
       <div class="table-wrap"><table>
         <thead><tr><th>Preset</th><th>Look</th><th>Suits</th></tr></thead>
         <tbody>
-          <tr><td>Caliper</td><td>Light gray, black pill buttons, condensed headings, rounded photos</td><td>Industrial and trade supply, large catalogs</td></tr>
-          <tr><td>Hi-vis</td><td>Safety yellow header, serif headings, outlined panels, badge stock markers</td><td>Auto parts, workshop and safety supplies</td></tr>
+          <tr><td>Vernier</td><td>Light gray, black pill buttons, condensed headings, rounded photos</td><td>Industrial and trade supply, large catalogs</td></tr>
+          <tr><td>Hi Vis</td><td>Safety yellow header, serif headings, outlined panels, badge stock markers</td><td>Auto parts, workshop and safety supplies</td></tr>
           <tr><td>Field</td><td>Dark green with a lime accent, tall headings, contour line patterns</td><td>Garden, land and outdoor equipment</td></tr>
         </tbody>
       </table></div>
@@ -68,7 +68,7 @@
 
     <section class="doc" id="spec-data">
       <h2>Spec data</h2>
-      <p>Caliper reads specifications from product metafields. Create them once in <strong>Settings &gt; Custom data &gt; Products</strong>, then fill them per product or by CSV import.</p>
+      <p>Vernier reads specifications from product metafields. Create them once in <strong>Settings &gt; Custom data &gt; Products</strong>, then fill them per product or by CSV import.</p>
       <h3>1. Create spec fields</h3>
       <p>Make one single-line text metafield per specification, all in the <code>specs</code> namespace. For example <code>specs.thread</code>, <code>specs.pressure</code>, <code>specs.material</code>. Tick <strong>Storefronts</strong> access so the theme can read them.</p>
       <h3>2. Choose the key specs</h3>
@@ -76,11 +76,11 @@
       <pre>Thread | specs.thread
 Pressure | specs.pressure
 Material | specs.material</pre>
-      <p>A product can override this with its own list in a multi-line metafield <code>caliper.key_specs</code>, in the same format. Use this when one store sells several product types.</p>
+      <p>A product can override this with its own list in a multi-line metafield <code>vernier.key_specs</code>, in the same format. Use this when one store sells several product types.</p>
       <h3>3. Spec columns per collection</h3>
-      <p>Add a multi-line collection metafield <code>caliper.spec_columns</code> in the same format to set the table columns for that collection. A fittings collection can show thread and pressure while a bearings collection shows bore and outside diameter.</p>
+      <p>Add a multi-line collection metafield <code>vernier.spec_columns</code> in the same format to set the table columns for that collection. A fittings collection can show thread and pressure while a bearings collection shows bore and outside diameter.</p>
       <h3>4. Full datasheet</h3>
-      <p>The product page datasheet lists every line in <code>caliper.spec_sheet</code>, or the key specs if it is empty.</p>
+      <p>The product page datasheet lists every line in <code>vernier.spec_sheet</code>, or the key specs if it is empty.</p>
       <h3>5. Documents and fitment</h3>
       <div class="table-wrap"><table>
         <thead><tr><th>Metafield</th><th>Type</th><th>Shows as</th></tr></thead>
@@ -96,9 +96,9 @@ Material | specs.material</pre>
 
     <section class="doc" id="collections">
       <h2>Collections and filters</h2>
-      <p>Collection pages show products as a spec table or as cards. Buyers switch between them and Caliper remembers their choice. In the <strong>Collection catalog</strong> section you can set the default view, the number of spec columns, products per page, and whether to show the description and collection image.</p>
+      <p>Collection pages show products as a spec table or as cards. Buyers switch between them and Vernier remembers their choice. In the <strong>Collection catalog</strong> section you can set the default view, the number of spec columns, products per page, and whether to show the description and collection image.</p>
       <h3>Filters</h3>
-      <p>Filters come from Shopify's free <strong>Search &amp; Discovery</strong> app. Open the app, choose <strong>Filters</strong> and add availability, price, vendor, product type, variant options and any of your <code>specs</code> metafields. Caliper shows them as pills or as a checklist (<strong>Theme settings &gt; Style &gt; Filter style</strong>). On screens narrower than 1200px they open from a Filters button.</p>
+      <p>Filters come from Shopify's free <strong>Search &amp; Discovery</strong> app. Open the app, choose <strong>Filters</strong> and add availability, price, vendor, product type, variant options and any of your <code>specs</code> metafields. Vernier shows them as pills or as a checklist (<strong>Theme settings &gt; Style &gt; Filter style</strong>). On screens narrower than 1200px they open from a Filters button.</p>
       <h3>Stock</h3>
       <p>Stock counts come from Shopify inventory. Set <strong>Low stock threshold</strong> in <strong>Theme settings &gt; Product catalog</strong>. Turn off <strong>Show stock status</strong> to hide counts.</p>
     </section>
@@ -174,14 +174,14 @@ Material | specs.material</pre>
     <section class="doc" id="faq">
       <h2>Questions</h2>
       <h3>My products show dashes in the spec table</h3>
-      <p>The table columns come from the collection's <code>caliper.spec_columns</code> or the theme's key specifications. A dash means that product has no value for that metafield.</p>
+      <p>The table columns come from the collection's <code>vernier.spec_columns</code> or the theme's key specifications. A dash means that product has no value for that metafield.</p>
       <h3>Filters do not appear</h3>
       <p>Add them in the Search &amp; Discovery app. Metafield filters need the metafield definition to exist and at least one product to have a value.</p>
       <h3>Order by part number says "Not found"</h3>
       <p>Matching uses variant SKUs. Check the SKU is filled in and that the product is published to the Online Store.</p>
       <h3>Price breaks do not show</h3>
       <p>Quantity price breaks come from B2B catalogs, available on Shopify Plus. They show to customers logged in to a company account.</p>
-      <h3>Can I use Caliper on more than one store?</h3>
+      <h3>Can I use Vernier on more than one store?</h3>
       <p>Each theme purchase covers one store. Buy another copy for each additional store.</p>
     </section>
 
@@ -189,7 +189,7 @@ Material | specs.material</pre>
       <h2>Support policy</h2>
       <p>We answer questions about the theme's settings and features, and we fix bugs in the theme. We reply within two business days, usually sooner.</p>
       <ul>
-        <li>Included: setup questions, how features work, and bugs in Caliper's own code.</li>
+        <li>Included: setup questions, how features work, and bugs in Vernier's own code.</li>
         <li>Not included: custom code changes, third-party apps, and problems caused by edits to the theme's code. For custom work, hire a Shopify Partner.</li>
         <li>Before editing code, duplicate your theme so you can go back.</li>
       </ul>
@@ -201,7 +201,7 @@ Material | specs.material</pre>
       <h3>1.0.0</h3>
       <p>First release.</p>
       <ul>
-        <li>Three presets: Caliper for industrial and trade supply, Hi-vis for auto parts and workshop supply, Field for garden and land equipment.</li>
+        <li>Three presets: Vernier for industrial and trade supply, Hi Vis for auto parts and workshop supply, Field for garden and land equipment.</li>
         <li>Collection pages switch between a grid and a spec table, with each collection's own columns.</li>
         <li>Product pages show a key spec readout, a full datasheet and downloadable documents.</li>
         <li>Compare up to four products side by side, and order by part number from a pasted list.</li>
@@ -213,6 +213,6 @@ Material | specs.material</pre>
     </section>
   </main>
 </div>
-<footer>Caliper is a Shopify theme. Shopify is a trademark of Shopify Inc.</footer>
+<footer>Vernier is a Shopify theme. Shopify is a trademark of Shopify Inc.</footer>
 </body>
 </html>

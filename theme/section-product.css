@@ -1,4 +1,4 @@
-/* Caliper product page: gallery, buy area and datasheet. Loaded only by the sections that use it; tokens come from snippets/css-variables.liquid. */
+/* Vernier product page: gallery, buy area and datasheet. Loaded only by the sections that use it; tokens come from snippets/css-variables.liquid. */
 
 /* ---------- Product datasheet ---------- */
 
@@ -439,7 +439,7 @@ input:focus-visible + .variant-picker__value {
   text-decoration: none;
 }
 
-/* Datasheet: index layout (Caliper) or cards (Hi-vis, Field) */
+/* Datasheet: index layout (Vernier) or cards (Hi Vis, Field) */
 
 .datasheet {
   display: grid;
